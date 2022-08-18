@@ -1,5 +1,6 @@
 
 //document.getElementById("container").scrollIntoView(true);
+console.log("added")
 var timebetween = 1000
 var correctanswers = 0
 //address =window.location.href
