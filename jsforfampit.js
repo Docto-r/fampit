@@ -1,738 +1,773 @@
-var _0x1a875c = _0x10a2;
-(function (_0x5e655f, _0x21b4b6) {
-    var _0x4efb9d = _0x10a2,
-    _0x2bd025 = _0x5e655f();
-    while (!![]) {
-        try {
-            var _0x2d984b = parseInt(_0x4efb9d(0xb0)) / 0x1 * (-parseInt(_0x4efb9d(0x81)) / 0x2) + parseInt(_0x4efb9d(0x10e)) / 0x3 * (parseInt(_0x4efb9d(0x121)) / 0x4) + parseInt(_0x4efb9d(0x10a)) / 0x5 * (parseInt(_0x4efb9d(0xce)) / 0x6) + -parseInt(_0x4efb9d(0xaa)) / 0x7 * (parseInt(_0x4efb9d(0x10f)) / 0x8) + parseInt(_0x4efb9d(0xa3)) / 0x9 * (-parseInt(_0x4efb9d(0xd3)) / 0xa) + parseInt(_0x4efb9d(0x8e)) / 0xb + parseInt(_0x4efb9d(0x76)) / 0xc;
-            if (_0x2d984b === _0x21b4b6)
-                break;
-            else
-                _0x2bd025['push'](_0x2bd025['shift']());
-        } catch (_0x1ff9ed) {
-            _0x2bd025['push'](_0x2bd025['shift']());
-        }
+var refs = [
+  `Fleischer, David M.; Chan, Edmond S.; Venter, Carina; Spergel, Jonathan M.; Abrams, Elissa M.; Stukus, David; Groetch, Marion; Shaker, Marcus; Greenhawt, Matthew (2021-01). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/33250376/">"A Consensus Approach to the Primary Prevention of Food Allergy Through Nutrition: Guidance from the American Academy of Allergy, Asthma, and Immunology; American College of Allergy, Asthma, and Immunology; and the Canadian Society for Allergy and Clinical Immunology"</a>. <i>The Journal of Allergy and Clinical Immunology. In Practice</i>. <b>9</b> (1): 22–43.e4. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaip.2020.11.002">10.1016/j.jaip.2020.11.002</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/2213-2201">2213-2201</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/33250376">33250376</a><br><br>`,
+  `<a target="_blank" href="https://link.springer.com/book/10.1007/978-3-030-18282-3"><i>Pediatric Allergy</i></a>. doi:<a target="_blank" href="https://doi.org/10.1007%2F978-3-030-18282-3">10.1007/978-3-030-18282-3</a>.<br><br>`,
+  `<i>Clinical &amp; Experimental Allergy</i>. <b>48</b> (6). 2018-06. doi:<a target="_blank" href="https://doi.org/10.1111%2Fcea.2018.48.issue-6">10.1111/cea.2018.48.issue-6</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/0954-7894">0954-7894</a><a target="_blank" href="http://dx.doi.org/10.1111/cea.2018.48.issue-6">http://dx.doi.org/10.1111/cea.2018.48.issue-6</a><br><br>`,
+  `Al-Muhsen S, Clarke AE, Kagan RS (2003). <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC154188">"Peanut allergy: an overview"</a>. <i>CMAJ</i>. <b>168</b> (10): 1279–1285. PMC <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC154188">154188</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/12743075">12743075</a>.<br><br>`,
+  `Boyce JA, Assa'ad A, Burks AW, et al. (December 2010). <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4241958">"Guidelines for the Diagnosis and Management of Food Allergy in the United States: Summary of the NIAID-Sponsored Expert Panel Report"</a>. <i>J. Allergy Clin. Immunol</i>. <b>126</b> (6): 1105–18. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2010.10.008">10.1016/j.jaci.2010.10.008</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>. PMC <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4241958">4241958</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/21134568">21134568</a><br><br>`,
+  `Forsthuber, Thomas G.; Radstake, Timothy R. D. J. (2015-01). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/25534976/">"Expert Review of Clinical Immunology 10-year anniversary issue. Foreword"</a>. <i>Expert Review of Clinical Immunology</i>. <b>11</b> (1): 1–3. doi:<a target="_blank" href="https://doi.org/10.1586%2F1744666X.2015.997215">10.1586/1744666X.2015.997215</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1744-8409">1744-8409</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/25534976">25534976</a>. <br><br>`,
+  `Netting, Merryn J.; Campbell, Dianne E.; Koplin, Jennifer J.; Beck, Kathy M.; McWilliam, Vicki; Dharmage, Shyamali C.; Tang, Mimi L. K.; Ponsonby, Anne-Louise; Prescott, Susan L.; Vale, Sandra; Loh, Richard K. S. (2017-11). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/28499774/">"An Australian Consensus on Infant Feeding Guidelines to Prevent Food Allergy: Outcomes From the Australian Infant Feeding Summit"</a>. <i>The Journal of Allergy and Clinical Immunology. In Practice</i>. <b>5</b> (6): 1617–1624. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaip.2017.03.013">10.1016/j.jaip.2017.03.013</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/2213-2201">2213-2201</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/28499774">28499774</a>. <br><br>`,
+  `Roduit, Caroline; Frei, Remo; Depner, Martin; Schaub, Bianca; Loss, Georg; Genuneit, Jon; Pfefferle, Petra; Hyvärinen, Anne; Karvonen, Anne M.; Riedler, Josef; Dalphin, Jean-Charles (2014-04). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/24508301/">"Increased food diversity in the first year of life is inversely associated with allergic diseases"</a>. <i>The Journal of Allergy and Clinical Immunology</i>. <b>133</b> (4): 1056–1064. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2013.12.1044">10.1016/j.jaci.2013.12.1044</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1097-6825">1097-6825</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/24508301">24508301</a>. <br><br>`,
+  `Togias, Alkis; Cooper, Susan F.; Acebal, Maria L.; Assa'ad, Amal; Baker, James R.; Beck, Lisa A.; Block, Julie; Byrd-Bredbenner, Carol; Chan, Edmond S.; Eichenfield, Lawrence F.; Fleischer, David M. (2017-01). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/28065278/">"Addendum guidelines for the prevention of peanut allergy in the United States: Report of the National Institute of Allergy and Infectious Diseases-sponsored expert panel"</a>. <i>The Journal of Allergy and Clinical Immunology</i>. <b>139</b> (1): 29–44. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2016.10.010">10.1016/j.jaci.2016.10.010</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1097-6825">1097-6825</a>. PMC <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5226648">5226648</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/28065278">28065278</a>.<br><br>`,
+  `Turner, Paul J.; Feeney, Mary; Meyer, Rosan; Perkin, Michael R.; Fox, Adam T. (2018-08). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/30133860/">"Implementing primary prevention of food allergy in infants: New BSACI guidance published"</a>. <i>Clinical and Experimental Allergy: Journal of the British Society for Allergy and Clinical Immunology</i>. <b>48</b> (8): 912–915. doi:<a target="_blank" href="https://doi.org/10.1111%2Fcea.13218">10.1111/cea.13218</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1365-2222">1365-2222</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/30133860">30133860</a>.<br><br>`,
+  `Blaiss, Michael S.; Steven, Gary C.; Bender, Bruce; Bukstein, Don A.; Meltzer, Eli O.; Winders, Tonya (2019-05). <a target="_blank" href="http://dx.doi.org/10.1016/j.anai.2018.08.019">"Shared decision making for the allergist"</a>. <i>Annals of Allergy, Asthma &amp;Immunology</i>. <b>122</b> (5): 463–470. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.anai.2018.08.019">10.1016/j.anai.2018.08.019</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1081-1206">1081-1206</a>.<br><br>`,
+  `Du Toit, George; Sampson, Hugh A.; Plaut, Marshall; Burks, A. Wesley; Akdis, Cezmi A.; Lack, Gideon (2018-01). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/29191680/">"Food allergy: Update on prevention and tolerance"</a>. <i>The Journal of Allergy and Clinical Immunology</i>. <b>141</b> (1): 30–40. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2017.11.010">10.1016/j.jaci.2017.11.010</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1097-6825">1097-6825</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/29191680">29191680</a>.<br><br>`,
+  `Lack, Gideon (2012-05). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/22464642/">"Update on risk factors for food allergy"</a>. <i>The Journal of Allergy and Clinical Immunology</i>. <b>129</b> (5): 1187–1197. doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2012.02.036">10.1016/j.jaci.2012.02.036</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1097-6825">1097-6825</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/22464642">22464642</a>. <br><br>`,
+  `<br><br>`,
+  `Brough, Helen A.; Santos, Alexandra F.; Makinson, Kerry; Penagos, Martin; Stephens, Alick C.; Douiri, Abdel; Fox, Adam T.; Du Toit, George; Turcanu, Victor; Lack, Gideon (2013-09).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaci.2013.02.034">"Peanut protein in household dust is related to household peanut consumption and is biologically active"</a>.&nbsp;<i>Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>132</b>&nbsp;(3): 630–638.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2013.02.034">10.1016/j.jaci.2013.02.034</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>.<br><br>`,
+  `Perry, Tamara T; Conover-Walker, Mary Kay; Pomés, Anna; Chapman, Martin D; Wood, Robert A (2004-05).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaci.2004.02.035">"Distribution of peanut allergen in the environment"</a>.&nbsp;<i>Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>113</b>&nbsp;(5): 973–976.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2004.02.035">10.1016/j.jaci.2004.02.035</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>.<br><br>`,
+  `Brough, Helen A.; Liu, Andrew H.; Sicherer, Scott; Makinson, Kerry; Douiri, Abdel; Brown, Sara J.; Stephens, Alick C.; Irwin McLean, W.H.; Turcanu, Victor; Wood, Robert A.; Jones, Stacie M. (2015-01).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaci.2014.10.007">"Atopic dermatitis increases the effect of exposure to peanut antigen in dust on peanut sensitization and likely peanut allergy"</a>.&nbsp;<i>Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>135</b>&nbsp;(1): 164–170.e4.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2014.10.007">10.1016/j.jaci.2014.10.007</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>.<br><br>`,
+  `MALONEY, J; CHAPMAN, M; SICHERER, S (2006-09).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaci.2006.05.017">"Peanut allergen exposure through saliva: Assessment and interventions to reduce exposure"</a>.&nbsp;<i>Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>118</b>&nbsp;(3): 719–724.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2006.05.017">10.1016/j.jaci.2006.05.017</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>.<br><br>`,
+  `Brough, Helen A.; Liu, Andrew H.; Sicherer, Scott; Makinson, Kerry; Douiri, Abdel; Brown, Sara J.; Stephens, Alick C.; Irwin McLean, W.H.; Turcanu, Victor; Wood, Robert A.; Jones, Stacie M. (2015-01).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaci.2014.10.007">"Atopic dermatitis increases the effect of exposure to peanut antigen in dust on peanut sensitization and likely peanut allergy"</a>.&nbsp;<i>Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>135</b>&nbsp;(1): 164–170.e4.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2014.10.007">10.1016/j.jaci.2014.10.007</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>.<br><br>`,
+  `Brough, H. A.; Kull, I.; Richards, K.; Hallner, E.; Söderhäll, C.; Douiri, A.; Penagos, M.; Melén, E.; Bergström, A.; Turcanu, V.; Wickman, M. (2018-03-23).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1111/cea.13111">"Environmental peanut exposure increases the risk of peanut sensitization in high-risk children"</a>.&nbsp;<i>Clinical&nbsp;&amp;&nbsp;Experimental Allergy</i>.&nbsp;<b>48</b>&nbsp;(5): 586–593.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1111%2Fcea.13111">10.1111/cea.13111</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0954-7894">0954-7894</a>.Lack, Gideon (2012-05).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaci.2012.02.036">"Update on risk factors for food allergy"</a>.&nbsp;<i>Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>129</b>&nbsp;(5): 1187–1197.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaci.2012.02.036">10.1016/j.jaci.2012.02.036</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/0091-6749">0091-6749</a>.<br><br>`,
+  `Sheehan, William J.; Taylor, Steve L.; Phipatanakul, Wanda; Brough, Helen A. (2018-11).&nbsp;<a target="_blank" href="http://dx.doi.org/10.1016/j.jaip.2018.08.001">"Environmental Food Exposure: What Is the Risk of Clinical Reactivity From Cross-Contact and What Is the Risk of Sensitization"</a>.&nbsp;<i>The Journal of Allergy and Clinical Immunology: In Practice</i>.&nbsp;<b>6</b>&nbsp;(6): 1825–1832.&nbsp;doi:<a target="_blank" href="https://doi.org/10.1016%2Fj.jaip.2018.08.001">10.1016/j.jaip.2018.08.001</a>.&nbsp;ISSN&nbsp;<a target="_blank" href="https://www.worldcat.org/issn/2213-2198">2213-2198</a>.<br><br>`,
+  `Greer, Frank R.; Sicherer, Scott H.; Burks, A. Wesley; COMMITTEE ON NUTRITION; SECTION ON ALLERGY AND IMMUNOLOGY (2019-04). <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/30886111/">"The Effects of Early Nutritional Interventions on the Development of Atopic Disease in Infants and Children: The Role of Maternal Dietary Restriction, Breastfeeding, Hydrolyzed Formulas, and Timing of Introduction of Allergenic Complementary Foods"</a>. <i>Pediatrics</i>. <b>143</b>(4): e20190281. doi:<a target="_blank" href="https://doi.org/10.1542%2Fpeds.2019-0281">10.1542/peds.2019-0281</a>. ISSN <a target="_blank" href="https://www.worldcat.org/issn/1098-4275">1098-4275</a>. PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/30886111">30886111</a>. <br><br>`,
+  `<br><br>`,
+  `<a target="_blank" href="https://doi.org/10.52570/DGAC2020">"Scientific Report of the 2020 Dietary Guidelines Advisory Committee: Advisory Report to the Secretary of Agriculture and Secretary of Health and Human Services"</a>. 2020-07-15. doi:<a target="_blank" href="https://doi.org/10.52570%2Fdgac2020">10.52570/dgac2020</a>.`,
+  `<br><br>`,
+  `<br><br>`,
+  `<br><br>`,
+  `<br><br>`,
+  `<br><br>`,
+  `<br><br>`,
+  `<br><br>`,
+  `<br><br>`
+]
+//console.log(refs[21])
+var fampit = {
+  "earlyfood_leap_guidelines": [{
+    "question": "All infants who are fed human milk exclusively or who receive both human milk and infant formula (mixed fed) will need supplementation with ____",
+    "answerChoiceList": [{
+      "choice": "Vitamin B12",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Vitamin C",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Vitamin D",
+      "extra": "<b>Provide Infants Supplemental Vitamin D Beginning Soon After Birth&nbsp;</b><div><b><br></b><div>All infants who are fed human milk exclusively or who receive both human milk and infant formula (mixed fed) will need a vitamin D supplement of 400 IU per day beginning soon after birth. Infant formula is fortified with vitamin D, thus, when an infant is receiving full feeds of infant formula, vitamin D supplementation is not needed. Families who do not wish to provide a supplement directly to their infant should discuss with a healthcare provider the risks and benefits of maternal high dose supplementation options. Even when consuming a varied diet, achieving adequate vitamin D from foods and beverages (natural sources) alone is challenging, suggesting that young children may need to continue taking a vitamin D supplement after age 12 months. Parents, caregivers, and guardians should consult with a healthcare provider to determine how long supplementation is necessary</div></div>",
+      "References": [refs[23]]
+    }, {
+      "choice": "Iron",
+      "extra": "Caregivers of infants exclusively fed human milk should talk with their pediatric care provider about whether there may be a need for infants supplementation with iron before age 6 months. A complementary food source of iron beginning at about 6 months is particularly important for infants fed human milk because the iron content of human milk is low and maternal iron intake during lactation does not increase its content. In the United States, an estimated 77 percent of infants fed human milk have inadequate iron intake during the second half of infancy, highlighting the importance of introducing iron-rich foods starting at age 6 months.",
+      "References": ""
     }
+    ],
+    "answer": 3
+  }, {
+    "question": "Zinc-rich complementary foods (e.g., meats, beans, zinc fortified infant cereals) are important from age _____ onwards to support adequate zinc status, which supports growth and immune function.",
+    "answerChoiceList": [{
+      "choice": "2 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "4 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": "<b>INTRODUCE ZINC-RICH FOODS TO INFANTS STARTING AT ABOUT 6 MONTHS OLD&nbsp;</b><div><b><br></b><div>Zinc-rich complementary foods (e.g., meats, beans, zincfortified infant cereals) are important from age 6 months onwards to support adequate zinc status, which supports growth and immune function. Although the zinc content of human milk is initially high and efficiently absorbed, the concentration declines over the first 6 months of lactation and is not affected by maternal zinc intake. During the second half of infancy, approximately half (54%) of U.S. infants fed human milk have inadequate zinc intake. Prioritizing zinc-rich foods starting at 6 months of age to complement human milk feedings will help infants meet their requirement for zinc.</div></div>",
+      "References": [refs[23]]
+    }, {
+      "choice": "1 year",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "A 6-month-old boy is brought to the clinic for a routine well-child check. The patient was exclusively breastfed for the first 4 months of life. Over the past 2 months, his family has gradually introduced complementary foods, including cereals and several infant fruit and vegetable products, into his diet. The family is concerned about introducing highly allergenic foods such as peanuts, shellfish, and eggs because the patient's cousin was hospitalized after developing a severe allergic reaction to eggs. The patient is developing normally and growing at the 50th percentile for weight. His medications include a vitamin D supplement and petroleum jelly for dry skin. Heart, lung, and abdominal examinations are normal. There are small, dry, scaly patches of skin over the extensor surfaces of the extremities. Which of the following is the best approach to the introduction of highly allergenic foods in this patient?",
+    "answerChoiceList": [{
+      "choice": "Begin small amounts of highly allergenic foods at home",
+      "extra": "An infant without severe, refractory eczema or an IgE-mediated food allergy is considered low risk for developing food allergies, and early introduction of highly allergenic foods after age 4-6 months is recommended.",
+      "References": [refs[1]]
+    }, {
+      "choice": "Delay introduction of eggs and other high-risk foods until 2 years of age",
+      "extra": "Delayed introduction of highly allergenic foods is not recommended due to the increased risk of food allergies.",
+      "References": ""
+    }, {
+      "choice": "Perform a trial of egg and/or peanut in the office",
+      "extra": "High-risk infants have severe, refractory eczema and/or a known/suspected IgE-mediated food allergy. Allergy testing (eg, IgE levels, skin testing) is recommended prior to the introduction of highly allergenic foods in high-risk infants. Depending on the results, a food challenge may be performed in the office (ie, mild to moderate skin reaction) or complete avoidance may be advised (ie, large wheal on skin test) until testing is repeated the following year",
+      "References": ""
+    }, {
+      "choice": "Recommend avoiding eggs, peanuts, and other highly allergenic foods",
+      "extra": "High-risk infants have severe, refractory eczema and/or a known/suspected IgE-mediated food allergy. Allergy testing (eg, IgE levels, skin testing) is recommended prior to the introduction of highly allergenic foods in high-risk infants. Depending on the results, a food challenge may be performed in the office (ie, mild to moderate skin reaction) or complete avoidance may be advised (ie, large wheal on skin test) until testing is repeated the following year",
+      "References": ""
+    }, {
+      "choice": "Resume exclusive breastfeeding until 1 year of age",
+      "extra": "Exclusive breastfeeding is encouraged for the first 6 months of life. However, complementary foods are required to satisfy the infant's nutritional requirements after age 6 months.",
+      "References": ""
+    }
+    ],
+    "answer": 1
+  }, {
+    "question": "What is the age that complementary food sources of iron should be introduced?",
+    "answerChoiceList": [{
+      "choice": "2 years",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1 year",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": "Iron-rich foods (e.g., meats and seafood rich in heme iron and iron-fortified infant cereals) are important components of the infant’s diet from age 6 through 11 months to maintain adequate iron status, which supports neurologic development and immune function. Infants are typically born with body stores of iron adequate for about the first 6 months of life, depending on gestational age, maternal iron status, and timing of umbilical cord clamping. By age 6 months, however, infants require an external source of iron apart from human milk. Caregivers of infants exclusively fed human milk should talk with their pediatric care provider about whether there may be a need for infants supplementation with iron before age 6 months. A complementary food source of iron beginning at about 6 months is particularly important for infants fed human milk because the iron content of human milk is low and maternal iron intake during lactation does not increase its content. In the United States, an estimated 77 percent of infants fed human milk have inadequate iron intake during the second half of infancy, highlighting the importance of introducing iron-rich foods starting at age 6 months. Infants receiving most of their milk feeds as ironfortified infant formula are likely to need less iron from complementary foods beginning at 6 months of age. After age 12 months, children have a lower iron requirement, but good food sources of iron are still needed to maintain adequate iron status and prevent deficiency",
+      "References": [refs[23]]
+    }, {
+      "choice": "3 months",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "Essential omega-3 and omega-6 fatty acids are supplied through what food sources?",
+    "answerChoiceList": [{
+      "choice": "Seafood, nuts, seeds, and oils",
+      "extra": "Protein foods, including meats, poultry, eggs, seafood, nuts, seeds, and soy products, are important sources of iron, zinc, protein, choline, and long chain polyunsaturated fatty acids. The long-chain polyunsaturated fatty acids, specifically the essential omega-3 and omega-6 fatty acids supplied through seafood, nuts, seeds, and oils, influence the infant’s fatty acid status and are among the key nutrients needed for the rapid brain development that occurs through the infant’s first 2 years of life. Some types of fish such as salmon and trout are also natural sources of vitamin D. To limit exposure to methylmercury from seafood, the U.S. Food and Drug Administration and the U.S. Environmental Protection Agency issued joint guidance regarding the types of seafood to choose.",
+      "References": [refs[23]]
+    }, {
+      "choice": "Vegetables, whole grains, and poultry",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Processed foods, seafood, and nuts",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Meat, poultry, eggs, and dairy",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Vegetables, fruit, and grains",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 1
+  }, {
+    "question": "What food can cause botulism and should be avoided in infants?",
+    "answerChoiceList": [{
+      "choice": "Yogurt",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Rice",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Malt",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Honey",
+      "extra": "Infants should not be given any foods containing raw or cooked honey. Honey can contain the Clostridium botulinum organism that could cause serious illness or death among infants. Infants and young children also should not be given any unpasteurized foods or beverages, such as unpasteurized juices, milk, yogurt, or cheeses, as they could contain harmful bacteria.",
+      "References": [refs[23]]
+    }, {
+      "choice": "Sardines",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 4
+  }, {
+    "question": "What is typically not needed for healthy infants in the first 6 months?",
+    "answerChoiceList": [{
+      "choice": "Breastmilk",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Formula",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Supplemental water",
+      "extra": "For healthy infants with adequate intake of human milk or infant formula, supplemental water is typically not needed in the first 6 months. Small amounts (up to 4 to 8 ounces per day) of plain, fluoridated drinking water can be given to infants with the introduction of complementary foods. Plain, fluoridated drinking water intake can slowly be increased after age 1 to meet hydration and fluoride needs. ",
+      "References": [refs[23]]
+    }, {
+      "choice": "Vitamin D",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "Which of the following beverages should not be given before age 12 months?",
+    "answerChoiceList": [{
+      "choice": "Fruit juice",
+      "extra": "Before age 12 months, 100% fruit or vegetable juices should not be given to infants. In the second year of life, fruit juice is not necessary, and most fruit intake should come from eating whole fruit. If 100% fruit juice is provided, up to 4 ounces per day can fit in a healthy dietary pattern. Juices that contain added sugars should be avoided.",
+      "References": ""
+    }, {
+      "choice": "Cow milk",
+      "extra": "Infants should not consume cow milk or fortified soy beverages before age 12 months to replace human milk or infant formula. Cow milk does not have the correct amount of nutrients for infants, and its higher protein and mineral content are hard for an infant’s kidneys and digestive system to process. Plain cow milk (whole milk) or fortified unsweetened soy beverage can be offered beginning around 12 months of age to help meet calcium, potassium, vitamin D, and protein needs. Flavored milks for children age 12 through 23 months should be avoided because they contain added sugars.",
+      "References": ""
+    }, {
+      "choice": "Fortified unsweetened soy beverages",
+      "extra": "Infants should not consume cow milk or fortified soy beverages before age 12 months to replace human milk or infant formula. Cow milk does not have the correct amount of nutrients for infants, and its higher protein and mineral content are hard for an infant’s kidneys and digestive system to process. Plain cow milk (whole milk) or fortified unsweetened soy beverage can be offered beginning around 12 months of age to help meet calcium, potassium, vitamin D, and protein needs. Flavored milks for children age 12 through 23 months should be avoided because they contain added sugars.",
+      "References": ""
+    }, {
+      "choice": "Beverages made from plants, such as soy, oat, rice, coconut, and almond",
+      "extra": "Plant-based milk alternatives, which are sometimes referred to as milk alternatives, include beverages made from plants, such as soy, oat, rice, coconut, and almond. These beverages should not be used in the first year of life to replace human milk or infant formula. They may come in different flavors and some forms have added sugars. Unsweetened versions of these beverages may be accommodated in small amounts in the diet during the second year of life, but most have significantly less protein than cow milk and are not always fortified with calcium and vitamin D. Among plant-based milk alternatives, only fortified soy beverage is currently considered a dairy equivalent. Thus, consuming other plant-based beverages does not contribute to meeting dairy recommendations.",
+      "References": ""
+    }, {
+      "choice": "All of the above",
+      "extra": "Infants should not consume cow milk or fortified soy beverages before age 12 months to replace human milk or infant formula. Cow milk does not have the correct amount of nutrients for infants, and its higher protein and mineral content are hard for an infant’s kidneys and digestive system to process. Plain cow milk (whole milk) or fortified unsweetened soy beverage can be offered beginning around 12 months of age to help meet calcium, potassium, vitamin D, and protein needs. Flavored milks for children age 12 through 23 months should be avoided because they contain added sugars. <br> Plant-based milk alternatives, which are sometimes referred to as milk alternatives, include beverages made from plants, such as soy, oat, rice, coconut, and almond. These beverages should not be used in the first year of life to replace human milk or infant formula. They may come in different flavors and some forms have added sugars. Unsweetened versions of these beverages may be accommodated in small amounts in the diet during the second year of life, but most have significantly less protein than cow milk and are not always fortified with calcium and vitamin D. Among plant-based milk alternatives, only fortified soy beverage is currently considered a dairy equivalent. Thus, consuming other plant-based beverages does not contribute to meeting dairy recommendations. <br> Before age 12 months, 100% fruit or vegetable juices should not be given to infants. In the second year of life, fruit juice is not necessary, and most fruit intake should come from eating whole fruit. If 100% fruit juice is provided, up to 4 ounces per day can fit in a healthy dietary pattern. Juices that contain added sugars should be avoided.",
+      "References": [refs[23]]
+    }
+    ],
+    "answer": 5
+  }, {
+    "question": "Beverages containing caffeine should be avoided for children younger than age __.",
+    "answerChoiceList": [{
+      "choice": "6 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1 year",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "2 years",
+      "extra": "Concerns exist about potential negative health effects of caffeine for young children, and no safe limits of caffeine have been established for this age group. Caffeine is a stimulant that can occur naturally in foods and beverages or as an additive. Major sources of caffeine for Americans include beverages such as soft drinks, tea, coffee, and sports drinks. Beverages containing caffeine should be avoided for children younger than age 2.",
+      "References": [refs[23]]
+    }, {
+      "choice": "5 years",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "Why are low- and no-calorie sweeteners, which can also be called high-intensity sweeteners, not recommended for children younger than age 2?",
+    "answerChoiceList": [{
+      "choice": "Risk of developing diabetes later in life",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Risk of obesity",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "May develop taste preference for sweet foods",
+      "extra": "Infants and young children have virtually no room in their diet for added sugars. This is because the nutrient requirements for infants and young children are quite high relative to their size, but the amount of complementary foods they consume is small. Complementary foods need to be nutrient-dense and not contain additional calories from added sugars. In addition, low- and no-calorie sweeteners, which can also be called high-intensity sweeteners, are not recommended for children younger than age 2. Taste preferences are being formed during this time period, and infants and young children may develop preferences for overly sweet foods if introduced to very sweet foods during this timeframe",
+      "References": [refs[23]]
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "Birth Through Age 5 Months, A child may be full if he or she:",
+    "answerChoiceList": [{
+      "choice": "Puts hands to mouth.",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Turns head toward breast or bottle.",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Puckers, smacks, or licks lips.",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Relaxes hands.",
+      "extra": `<table><tbody><tr><td colspan="3"><div><strong>Signs a Child is Hungry or Full</strong></div></td></tr><tr><td></td><td><div>A child may be <b>hungry </b>if he or she:&nbsp;</div></td><td><div>A child may be <b>full </b>if he or she</div></td></tr><tr><td>Birth Through Age 5 Months<br></td><td><div><div><br></div><ul><li>Puts hands to mouth.&nbsp;</li><li><div>&nbsp;Turns head toward breast or bottle.&nbsp;</div></li><li><div>Puckers, smacks, or licks lips.&nbsp;</div></li><li>Has clenched hands<br></li></ul></div></td><td><ul><li>Closes mouth.&nbsp;</li><li>Turns head away from breast or bottle.&nbsp;</li><li>Relaxes hands.<br></li></ul></td></tr><tr><td>Age 6 Through 23 Month<br></td><td><ul><li>Reaches for or points to food.&nbsp;</li><li>Opens his or her mouth when offered a spoon or food.&nbsp;</li><li>Gets excited when he or she sees food.&nbsp;</li><li>Uses hand motions or makes sounds to let you know he or she is still hungry<br></li></ul></td><td><ul><li>Pushes food away.&nbsp;</li><li>Closes his or her mouth when food is offered.&nbsp;</li><li>Turns his or her head away from food.&nbsp;</li><li>Uses hand motions or makes sounds to let you know he or she is still full.<br></li></ul></td></tr></tbody></table>`,
+      "References": [refs[23]]
+    }, {
+      "choice": "Has clenched hands.",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 4
+  },
+  {
+    "question": "Birth Through Age 5 Months, A child may be full if he or she:",
+    "answerChoiceList": [{
+      "choice": "Puts hands to mouth.",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Turns head toward breast or bottle.",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Puckers, smacks, or licks lips.",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Relaxes hands.",
+      "extra": `<table><tbody><tr><td colspan="3"><div><strong>Signs a Child is Hungry or Full</strong></div></td></tr><tr><td></td><td><div>A child may be <b>hungry </b>if he or she:&nbsp;</div></td><td><div>A child may be <b>full </b>if he or she</div></td></tr><tr><td>Birth Through Age 5 Months<br></td><td><div><div><br></div><ul><li>Puts hands to mouth.&nbsp;</li><li><div>&nbsp;Turns head toward breast or bottle.&nbsp;</div></li><li><div>Puckers, smacks, or licks lips.&nbsp;</div></li><li>Has clenched hands<br></li></ul></div></td><td><ul><li>Closes mouth.&nbsp;</li><li>Turns head away from breast or bottle.&nbsp;</li><li>Relaxes hands.<br></li></ul></td></tr><tr><td>Age 6 Through 23 Month<br></td><td><ul><li>Reaches for or points to food.&nbsp;</li><li>Opens his or her mouth when offered a spoon or food.&nbsp;</li><li>Gets excited when he or she sees food.&nbsp;</li><li>Uses hand motions or makes sounds to let you know he or she is still hungry<br></li></ul></td><td><ul><li>Pushes food away.&nbsp;</li><li>Closes his or her mouth when food is offered.&nbsp;</li><li>Turns his or her head away from food.&nbsp;</li><li>Uses hand motions or makes sounds to let you know he or she is still full.<br></li></ul></td></tr></tbody></table>`,
+      "References": ''
+    }, {
+      "choice": "Has clenched hands.",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 4
+  }, {
+    "question": " Which of the following dietetic measures reduces the risk for development of food allergy and atopic eczema in “high-risk” infants?",
+    "answerChoiceList": [{
+      "choice": "Exclusive breastfeeding during at least 6 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Avoidance of cow’s milk products during at least the first year of life",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Exclusive breastfeeding and/or a documented hypoallergenic formula during the first 4 months of life",
+      "extra": "<b>Breastfeeding is encouraged for all infants</b>. Hydrolyzed infant formulas are suggested for infants at risk, while <b>complementary food including potential allergens are not restricted after 4–6  months</b> (of course not for infants experiencing allergic reactions to those food). Maternal diet during pregnancy should be healthy and balanced as <b>evidence to support avoidance of potential food allergens, during pregnancy are lacking</b>. Early dietary intervention in high risk infants can reduce the risk for developing food allergy and eczema, but does not appear to modify the natural course of the allergic march in the long run.",
+      "References": [refs[0] + refs[1]]
+    }, {
+      "choice": "Exclusive breastfeeding and/or a documented hypoallergenic formula during the first 2 months of life",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Avoidance of hyperallergenic food such as cow’s milk, hens’ egg, peanut, tree nuts and fish the first year of life",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "A 2-year-old girl was brought up to the emergency room by her parents, due to protracted vomiting, breathlessness, and emergence of severe swelling on her lips and face, minutes after ingestion of a chocolate cream in a party. Her parents had known about their daughter probable allergy to nuts, as she frequently experienced itching, urticaria and mild angioedema after having tree nut, soy beans or processed nut-containing mixed bars. The chocolate cream of suspicion contained peanut cream, and almond particles, to which they were not sure if she had ever been exposed. Anaphylaxis management protocol was started for her with epinephrine and methylprednisolone.<br><br>Which of the following statements is true about the diagnosis of peanut allergy?",
+    "answerChoiceList": [{
+      "choice": "A history of food-induced reaction with typical allergic symptoms, after ingestion of peanut is enough to establish the diagnosis",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Diagnosis requires a history of allergic reaction with “oral” exposure/ingestion of peanut rather than topical or inhaled exposure",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Skin prick test should be avoided when peanut allergy is suspected due to a high risk of anaphylaxis",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "A skin prick test survey with a number of suspected food items should be first step in workup of this patient",
+      "extra": "<b>Double-blind placebo-controlled oral food challenge is gold-standard in diagnosis of food allergy</b><br>A reliable history of allergic reactions with exposure to a common/likely food item, along with involvement of two or more organ systems established the diagnosis of anaphylaxis in this girl and hence her allergy to peanut. Anaphylactic reaction can interfere with the results of skin prick test and less probably to specific IgE (sIgE) radioallergosorbent test (RAST). It is therefore plausible to maintain comprehensive avoidance from all suspected nuts and also provide the parents with epinephrine autoinjector, until the follow-up visit. When the suspected nut is identified, RAST can strongly predict clinical reactivity to peanut. Positive IgE and clinical history together disclose the diagnosis in most patients. When clinical history is vague or sIgE levels are equivocal, a double-blind placebo-controlled oral food challenge (OFC) with items of suspect from prick test can be performed to establish a consensus over the culprit item. Skin prick test was negative for almond (3 mm), tree nut (4 mm) and marginally positive for peanut (7 mm) (histamine control = 3 mm). Peanut sIgE by ImmunoCAP was 13 IU/mL (levels between 13 to 15 IU/mL have a 95–99% positive predictive value). OFC with peanut in allergy clinic reproduced wheezing and urticaria in the girl, confirming her diagnosis.",
+      "References": [refs[2] + refs[3] + refs[4]]
+    }, {
+      "choice": "Placebo-controlled oral food challenge test is gold-standard and first step in diagnosis of food allergy",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 4
+  }, {
+    "question": " All the following statements are correct about peanut allergy, except",
+    "answerChoiceList": [{
+      "choice": "It is one of the most common causes of food allergy worldwide",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Severe multisystem reactions are uncommon with this type of allergy",
+      "extra": "Allergy to nuts and seeds is amongst the most common food allergies worldwide. Prevalence of peanut allergy reaches to up to 1–2% in United States, while the condition is considered to be rare in most Asian countries. Besides a personal or family history of atopy, early exposure to peanut oil in skin care products and household exposures are considered risk factors for childhood peanut allergy. Sensitization to peanut occurs early after birth and most children (approx. 75%) show symptoms during first direct exposure to the suspected nut/seed. Up to one half of children with peanut allergy are also allergic to tree nuts, and co-allergy to other nuts occurs in up to one half of patients with tree nut allergy. Systemic reaction is common and is seen in at least half of all IgE-mediated acute reactions to peanut. Peanut and tree nut allergy account for the majority of food-induced anaphylactic reactions.",
+      "References": [refs[1] + refs[5]]
+    }, {
+      "choice": "Development of tolerance is common in peanut allergy",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Co-allergy to other nuts, such as tree nut is common",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "First exposure commonly occurs in early childhood",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "For infants with mild to moderate eczema, you should",
+    "answerChoiceList": [{
+      "choice": "Evaluate with peanut-specific IgE and/or skin prick test",
+      "extra": "This is done for infants with severe eczema, egg allergy, or both",
+      "References": ""
+    }, {
+      "choice": "Introduce peanut-containing foods at 1-year",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Introduce peanut-containing foods around 6 months",
+      "extra": `<table class="wp-block-table has-fixed-layout"><thead><tr><th>Infant Criteria</th><th>Recommendations</th><th>Earliest Age of Peanut Introduction</th></tr></thead><tbody><tr><td>Severe eczema, egg allergy, or both</td><td>Strongly consider evaluation with peanut-specific IgE and/or skin prick test and, if necessary, an oral food challenge. Based on test results, introduce peanut-containing foods.</td><td>4 to 6 months</td></tr><tr><td>Mild to moderate eczema</td><td>Introduce peanut-containing foods.</td><td>Around 6 months</td></tr><tr><td>No eczema or any food allergy</td><td>Introduce peanut-containing foods.</td><td>Age appropriate and in accordance with family preferences and cultural practices</td></tr></tbody></table>`,
+      "References": [refs[0]]
+    }, {
+      "choice": "Perform an oral food challenge. Based on test results, introduce peanut-containing foods.",
+      "extra": "This is done for infants with severe eczema, egg allergy, or both",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "Is there a protective benefit from the use of hydrolyzed formula in the first year of life against food allergy or food sensitization?",
+    "answerChoiceList": [{
+      "choice": "Yes",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "No",
+      "extra": "There is lack of evidence that partially or extensively hydrolyzed formula prevents atopic disease in infants and children, even in those at high risk for allergic disease. This point is a change from the 2008 AAP clinical report, which concluded that there was modest evidence that the use of either partially or exclusively hydrolyzed formula prevents atopic dermatitis in high-risk infants who are formula fed or initially breastfed after birth.",
+      "References": [refs[21] + refs[0]]
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "“Peanut or egg should be the first food offered to an infant starting solid foods“",
+    "answerChoiceList": [{
+      "choice": "True",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "False",
+      "extra": "<b>Neither peanut nor egg should be the first food offered to an infant starting solid foods</b> <b>because it may be difficult to distinguish between an inability to manage complementary food, which may result in gagging, vomiting, or coughing in the infant; these symptoms may be incorrectly interpreted as an allergic reaction</b>. Peanut or egg should only be introduced to an infant soon after he or she has tolerated a few other typical starter foods such as stage 1 fruits, vegetables, or grains; the addition of these foods first can provide options in which to mix peanut powder/flour or peanut butter, which should not be fed unmodified.",
+      "References": [refs[0] + refs[6] + refs[8] + refs[9]]
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "When should you start talking about peanut introduction guidelines with families?",
+    "answerChoiceList": [{
+      "choice": "Newborn period",
+      "extra": "Concept of early introduction:<ul><li>Primary care providers should implement talking points surrounding early introduction into <b>all well-child visits, beginning at birth and repeated at age 2, 4, 6, and 9 mo</b>. </li><li> Allergists seeing infants for conditions such as atopic dermatitis should discuss concepts surrounding early introduction with families. </li><li> Obstetricians can introduce these concepts with expecting parents to help them increase awareness and understanding.</li></ul>",
+      "References": [refs[0]]
+    }, {
+      "choice": "4 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1-year",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 1
+  }, {
+    "question": "Introduction of _____ in the first year of life showed a reduction in the prevalence of food allergy in the first 6 years of life",
+    "answerChoiceList": [{
+      "choice": "Peanuts",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Fish",
+      "extra": "Diet diversity is defined as the number of different foods or food groups consumed over a given reference period.There are a total of 15 publications referring to 7 different studies that have investigated the effect of diet diversity on allergy outcomes(see Table E1 in this article’s Online Repository at www.jaciinpractice.org), but just 3 investigated food allergy as an outcome. <br> In a study from 5 European countries(Austria, Finland, France, Germany, and Switzerland), Roduit et al observed that decreased diet diversity in the first year of life was associated with increased risk of a reported doctor- diagnosed food allergy up to age 6 years(6 foods vs 4 - 5 foods: 1.85; 95% CI, 1.02-3.35; 6 vs 0-3 items: 4.43; 95% CI, 1.62-12.1), using a model that adjusted for potential confounders, but not a model that adjusted for both confounders and reverse causality.In applying this latter model, the results were no longer statistically significant. <b> For each additional food in the diet, the risk of reported food allergy decreased significantly(0.70; 0.57, 0.86; P & lt; .05), but lost significance when adjusted for a diagnosis occurring by age 1 year</b>.There was a stronger protective association observed for diet & nbsp; diversity when combining doctor - diagnosed food allergy with positive food sensitizations. <b> Introduction of fish in the first year of life showed a reduction in the prevalence of food allergy in the first 6 years of life</b>. <br> Roduit et al also showed that decreased diet diversity during the first year of life was associated with an increased risk of sensitization to food allergens(specific IgE tests to egg, CM, peanut, hazelnut, carrot, and wheat) at age 4.5 or 6 years(6 foods vs 4 - 5 foods: 1.52; 95 % CI, 0.83 - 2.76; 6 vs 0 - 3 items: 5.47; 95 % CI, 1.91 - 15.67), again using a model that adjusted for potential confounders, but not a model that adjusted for both confounders and reverse causality.In this latter model, the results remained statistically significant for 6 foods versus 0 to 3 foods.Nwaru et al90 reported that the introduction of 1 to 2 food items at 4 months and 4 or fewer food items at 6 months was associated with sensitization to egg, CM, fish, and wheat.However, this study also may be confounded by reverse causality.In the 15 - year follow - up of the GINI study, Markevych et al91 noted that higher food diversity during the first year of life was not associated with food sensitization(using the serologic FX5 test, which includes sIgE to CM, egg, peanut, soy, cod, wheat). <br> Grimshaw et al measured dietary patterns(rather than diversity) based on prospective food diary data to investigate whether infant feeding patterns(rather than any specific food / food component) impacted food allergy development.In this small, nested case -controlled study of food - allergic(n ¼ 41) and nonefood - allergic(n ¼ 82) children from a UK birth cohort, no such association was noted between the dietary pattern and development of food allergy, though the ongoing dietary pattern(after solid food introduction up to age 1 year) between the 2 groups was significantly different.This ongoing dietary pattern compared healthy versus unhealthy weaning foods, as defined by infant feeding guidelines, and found the “healthy infant diet” (identified as predominantly home - cooked diet during later infancy with high values for fruit, vegetable, fish, and poultry consumption and low values for highly processed adult foods, eg, ready meals, cook -in -sauces, potato - products, and bacon and the use of commercial baby foods more than once a day) was associated with less food allergy(P ¼ .002).Another report from the same cohort showed that a lower “healthy infant pattern” score was associated with increased risk of all food allergy, including both IgE - and noneIgE - mediated food allergy at the age of 2 years.<br> Lastly, a retrospective analysis of infant dietary patterns on the Isle of Wight in the food allergy intolerance research Birth Cohort noted a significant protective association between dietary diversity at both 6 and 9 months of life and lower odds of developing food allergy over the first decade of life.92 Data from this study indicated that for each additional food introduced by 6 months, the odds of developing food allergy over the first 10 years of life reduced by 10.8 %, even after correcting for significant factors.For each additional potentially allergic food introduced by 12 months, there was a significant reduction of 33.2 % in the likelihood of food allergy over the first 10 years of life.Food allergen diversity did not negatively affect overall food diversity, and there was no association between eczema and age of introduction of solids. <br> Diet diversity studies to date have inherent limitations, including the following: (1) diversity is perhaps more important for typically allergenic than for nonallergenic foods, but these studies do not discriminate the 2 aspects; (2) the amount / regularity of exposure once introduced is not captured; (3) diversity among and also within food groups, for example, how many fruits and vegetables, is not described; and(4) diversity versus early potential allergen introduction is not differentiated.As well, there may be cultural differences to account for in the types of foods that may comprise a diverse diet for a particular infant.",
+      "References": `Roduit, Caroline; Frei, Remo; Depner, Martin; Schaub, Bianca; Loss, Georg; Genuneit, Jon; Pfefferle, Petra; Hyvärinen, Anne; Karvonen, Anne M.; Riedler, Josef; Dalphin, Jean-Charles (2014-04).&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/24508301/">"Increased food diversity in the first year of life is inversely associated with allergic diseases"</a>.&nbsp;<i>The Journal of Allergy and Clinical Immunology</i>.&nbsp;<b>133</b>&nbsp;(4): 1056–1064.&nbsp;doi:<a href="https://doi.org/10.1016%2Fj.jaci.2013.12.1044">10.1016/j.jaci.2013.12.1044</a>.&nbsp;ISSN&nbsp;<a href="https://www.worldcat.org/issn/1097-6825">1097-6825</a>.&nbspPMIDnbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/24508301">24508301</a>.&nbsp;<br><br>Fleischer, David M.; Chan, Edmond S.; Venter, Carina; Spergel, Jonathan M.; Abrams, Elissa M.; Stukus, David; Groetch, Marion; Shaker, Marcus; Greenhawt, Matthew (2021-01).&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/33250376/">"A Consensus Approach to the Primary Prevention of Food Allergy Through Nutrition: Guidance from the American Academy of Allergy, Asthma, and Immunology; American College of Allergy, Asthma, and Immunology; and the Canadian Society for Allergy and Clinical Immunology"</a>.&nbsp;<i>The Journal of Allergy and Clinical Immunology. In Practice</i>.&nbsp;<b>9</b>&nbsp;(1): 22–43.e4.&nbsp;doi:<a href="https://doi.org/10.1016%2Fj.jaip.2020.11.002">10.1016/j.jaip.2020.11.002</a>.&nbsp;ISSN&nbsp;<a href="https://www.worldcat.org/issn/2213-2201">2213-2201</a>.&nbspPMID&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/33250376">33250376</a>`
+    }, {
+      "choice": "Egg",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Sesame",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }
+  ],
+  "earlyfood_current_research": [{
+    "question": "There is moderate evidence that egg introduction at around _____ is associated with a lower prevalence of egg allergy versus later introduction.",
+    "answerChoiceList": [{
+      "choice": "3 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1 year",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": `There is moderate evidence that <b>egg introduction at around 6 months is associated with a lower prevalence of egg allergy versus later introduction</b>.<br>Egg allergy currently impacts approximately 2% of the US population under 5 years of age. Current guidelines emphasize the importance of early introduction of highly allergenic foods, including egg, as a means of food allergy prevention. This shift in guidance has led to a younger patient population presenting with egg allergy concerns, and currently, there is limited research on egg restriction’s impact on the nutrition, growth, and development of infants and toddlers.<br>Egg products can be prepared in a variety of ways, including as baked-in egg, and lesser cooked forms of egg including pancakes/waffles, French toast, and scrambled/fried egg. Baked egg is egg as a minor ingredient in a baked good that is fully cooked through in dry oven heat, while scrambled/fried egg is an egg that has been cooked on a stove top heat. If a patient reacts to scrambled egg (one of the lesser cooked forms of egg), but is able to tolerate more cooked forms of egg such as pancakes/waffles, it is <b>beneficial to maintain the least cooked form of egg tolerated in that patient’s diet. </b>`,
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "Delayed introduction of cow’s milk protein was associated with _____ rates of cow’s milk allergy.",
+    "answerChoiceList": [{
+      "choice": "lower",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "higher",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "Current guidelines emphasize the importance of _____ of \nhighly allergenic foods, including egg, as a means of food allergy \nprevention",
+    "answerChoiceList": [{
+      "choice": "avoidance",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "early introduction",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "late introduction",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "back to 3",
+    "answerChoiceList": [{
+      "choice": "4 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1-year",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }
+  ],
+  "earlyfood_what_foods_introduce": [{
+    "question": "When should you start to introduce complementary foods?",
+    "answerChoiceList": [{
+      "choice": "0-4 months",
+      "extra": "Exclusive breastmilk and/or formula feeding is recommended till 4-6 months of age",
+      "References": ""
+    }, {
+      "choice": "4-6 months",
+      "extra": `When your child is ready, start to introduce complementary foods.<br>The <b>ages that infants show signs of readiness vary and are typically between ages 4 and 6 months</b>.&nbsp;<br>Signs that your child may be ready for complementary foods include: <br>• Being able to control the head and neck <br>• Sitting up alone or with support <br>• Bringing objects to the mouth <br>• Trying to grasp small objects, such as food or toys <br>• Swallowing food rather than pushing it back out onto the chin&nbsp;<br><br>There is no evidence that delaying introduction of allergenic foods helps prevent food allergy&nbsp;<br><br><b>Introduce complementary foods no later than 6 months!</b><br><b><br></b>Infants should be encouraged to consume a variety of complementary foods:<br>• Introduce iron-rich foods: meats, seafood, iron-fortified infant cereals <br>• Introduce zinc-rich foods: meats, beans, zinc-fortified infant cereals <br>• Introduce a variety of foods from all food groups: protein, fruits and vegetables, dairy, grains <br>• Introduce potentially allergenic food groups: egg, dairy, peanuts, tree nuts, soy, dairy, shellfish, fish, wheat&nbsp;`,
+      "References": [refs[10] + refs[11] + refs[12]]
+    }, {
+      "choice": "6-12 months",
+      "extra": "There is no evidence that delaying introduction of allergenic foods beyond 6 months prevents food allergy. ",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "Which of the following Dietary Components should be avoided?",
+    "answerChoiceList": [{
+      "choice": "Whole grains ",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Unprocessed meat",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Liquid cow’s milk",
+      "extra": `Dietary Components to Avoid:<br>• Honey and unpasteurized foods and beverages <br>• Sugar-sweetened beverages (ex. soda, sweet tea) <br>• <b>Liquid cow’s milk</b>, fortified soy beverages, and milk alternatives (such as plant-based milk) in place of breastmilk or infant formula <br>• Caffeinated beverages <br>• Seafood with high mercury content <br>• Loose nuts and other choke-risk foods`,
+      "References": [refs[10] + refs[11] + refs[12]]
+    }, {
+      "choice": "Carrots",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "The following food is not considered as a major food allergen (among top eight)",
+    "answerChoiceList": [{
+      "choice": "Milk",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Egg",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Poultry",
+      "extra": ` The 8 major allergens include:<br>Dairy, Eggs, Fish, Shellfish, Tree nuts, Peanuts, Soy, Wheat<br>The 8 major potentially allergenic foods should be introduced as complementary foods.<br><b>There is no evidence that delaying introduction of allergenic foods beyond 6 months prevents food allergy.</b><br>    `,
+      "References": [refs[10] + refs[11] + refs[12]]
+    }, {
+      "choice": "Peanut",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }
+  ],
+  "earlyfood_leap_guidelines (copy 2)": [{
+    "question": "It is recommended to refer ____ infants to a pediatric allergist for evaluation and possible skin testing",
+    "answerChoiceList": [{
+      "choice": "Low Risk",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "Moderate Risk",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "High Risk",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 3
+  }, {
+    "question": "For Moderate Risk Infants, it is recommended to recommend to introduce peanuts at home, starting at _____ of age",
+    "answerChoiceList": [{
+      "choice": "4 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1-year",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "Testing 4 options",
+    "answerChoiceList": [{
+      "choice": "4 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "I'm correct",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1-year",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "2-year",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }, {
+    "question": "back to 3",
+    "answerChoiceList": [{
+      "choice": "4 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "6 months",
+      "extra": "",
+      "References": ""
+    }, {
+      "choice": "1-year",
+      "extra": "",
+      "References": ""
+    }
+    ],
+    "answer": 2
+  }
+  ]
 }
-    (_0x5658, 0x9d2ff), console[_0x1a875c(0xf6)](_0x1a875c(0xee)));
+var _0x2ee787 = _0x4004;
+(function (_0x28bdc3, _0x31919b) {
+  var _0x17f3a9 = _0x4004,
+    _0x2486c0 = _0x28bdc3();
+  while (!![]) {
+    try {
+      var _0x96140d = parseInt(_0x17f3a9(0x9d)) / 0x1 * (-parseInt(_0x17f3a9(0xa9)) / 0x2) + -parseInt(_0x17f3a9(0x81)) / 0x3 * (-parseInt(_0x17f3a9(0x8c)) / 0x4) + parseInt(_0x17f3a9(0x84)) / 0x5 + parseInt(_0x17f3a9(0xb1)) / 0x6 + -parseInt(_0x17f3a9(0xb3)) / 0x7 + parseInt(_0x17f3a9(0x88)) / 0x8 + -parseInt(_0x17f3a9(0x9f)) / 0x9;
+      if (_0x96140d === _0x31919b)
+        break;
+      else
+        _0x2486c0['push'](_0x2486c0['shift']());
+    } catch (_0x3faf05) {
+      _0x2486c0['push'](_0x2486c0['shift']());
+    }
+  }
+}
+  (_0x48de, 0x5c823), console['log'](_0x2ee787(0x94)));
 var timebetween = 0x3e8, correctanswers = 0x0;
-function _0x5658() {
-    var _0xc94af2 = ['background', 'Infants\x20should\x20not\x20be\x20given\x20any\x20foods\x20containing\x20raw\x20or\x20cooked\x20honey.\x20Honey\x20can\x20contain\x20the\x20Clostridium\x20botulinum\x20organism\x20that\x20could\x20cause\x20serious\x20illness\x20or\x20death\x20among\x20infants.\x20Infants\x20and\x20young\x20children\x20also\x20should\x20not\x20be\x20given\x20any\x20unpasteurized\x20foods\x20or\x20beverages,\x20such\x20as\x20unpasteurized\x20juices,\x20milk,\x20yogurt,\x20or\x20cheeses,\x20as\x20they\x20could\x20contain\x20harmful\x20bacteria.', '\x20out\x20of\x20', 'Turner,\x20Paul\x20J.;\x20Feeney,\x20Mary;\x20Meyer,\x20Rosan;\x20Perkin,\x20Michael\x20R.;\x20Fox,\x20Adam\x20T.\x20(2018-08).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/30133860/\x22>\x22Implementing\x20primary\x20prevention\x20of\x20food\x20allergy\x20in\x20infants:\x20New\x20BSACI\x20guidance\x20published\x22</a>.\x20<i>Clinical\x20and\x20Experimental\x20Allergy:\x20Journal\x20of\x20the\x20British\x20Society\x20for\x20Allergy\x20and\x20Clinical\x20Immunology</i>.\x20<b>48</b>\x20(8):\x20912–915.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1111%2Fcea.13218\x22>10.1111/cea.13218</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1365-2222\x22>1365-2222</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/30133860\x22>30133860</a>.<br><br>', '5\x20years', 'Exclusive\x20breastfeeding\x20is\x20encouraged\x20for\x20the\x20first\x206\x20months\x20of\x20life.\x20However,\x20complementary\x20foods\x20are\x20required\x20to\x20satisfy\x20the\x20infant\x27s\x20nutritional\x20requirements\x20after\x20age\x206\x20months.', 'Vegetables,\x20fruit,\x20and\x20grains', 'Vitamin\x20C', 'A\x20skin\x20prick\x20test\x20survey\x20with\x20a\x20number\x20of\x20suspected\x20food\x20items\x20should\x20be\x20first\x20step\x20in\x20workup\x20of\x20this\x20patient', 'Newborn\x20period', 'querySelector', '<b>Provide\x20Infants\x20Supplemental\x20Vitamin\x20D\x20Beginning\x20Soon\x20After\x20Birth&nbsp;</b><div><b><br></b><div>All\x20infants\x20who\x20are\x20fed\x20human\x20milk\x20exclusively\x20or\x20who\x20receive\x20both\x20human\x20milk\x20and\x20infant\x20formula\x20(mixed\x20fed)\x20will\x20need\x20a\x20vitamin\x20D\x20supplement\x20of\x20400\x20IU\x20per\x20day\x20beginning\x20soon\x20after\x20birth.\x20Infant\x20formula\x20is\x20fortified\x20with\x20vitamin\x20D,\x20thus,\x20when\x20an\x20infant\x20is\x20receiving\x20full\x20feeds\x20of\x20infant\x20formula,\x20vitamin\x20D\x20supplementation\x20is\x20not\x20needed.\x20Families\x20who\x20do\x20not\x20wish\x20to\x20provide\x20a\x20supplement\x20directly\x20to\x20their\x20infant\x20should\x20discuss\x20with\x20a\x20healthcare\x20provider\x20the\x20risks\x20and\x20benefits\x20of\x20maternal\x20high\x20dose\x20supplementation\x20options.\x20Even\x20when\x20consuming\x20a\x20varied\x20diet,\x20achieving\x20adequate\x20vitamin\x20D\x20from\x20foods\x20and\x20beverages\x20(natural\x20sources)\x20alone\x20is\x20challenging,\x20suggesting\x20that\x20young\x20children\x20may\x20need\x20to\x20continue\x20taking\x20a\x20vitamin\x20D\x20supplement\x20after\x20age\x2012\x20months.\x20Parents,\x20caregivers,\x20and\x20guardians\x20should\x20consult\x20with\x20a\x20healthcare\x20provider\x20to\x20determine\x20how\x20long\x20supplementation\x20is\x20necessary</div></div>', '(.*?)/(.*?)/', 'Avoidance\x20of\x20hyperallergenic\x20food\x20such\x20as\x20cow’s\x20milk,\x20hens’\x20egg,\x20peanut,\x20tree\x20nuts\x20and\x20fish\x20the\x20first\x20year\x20of\x20life', '.*?/(.*?)/', 'Concerns\x20exist\x20about\x20potential\x20negative\x20health\x20effects\x20of\x20caffeine\x20for\x20young\x20children,\x20and\x20no\x20safe\x20limits\x20of\x20caffeine\x20have\x20been\x20established\x20for\x20this\x20age\x20group.\x20Caffeine\x20is\x20a\x20stimulant\x20that\x20can\x20occur\x20naturally\x20in\x20foods\x20and\x20beverages\x20or\x20as\x20an\x20additive.\x20Major\x20sources\x20of\x20caffeine\x20for\x20Americans\x20include\x20beverages\x20such\x20as\x20soft\x20drinks,\x20tea,\x20coffee,\x20and\x20sports\x20drinks.\x20Beverages\x20containing\x20caffeine\x20should\x20be\x20avoided\x20for\x20children\x20younger\x20than\x20age\x202.', 'Infants\x20and\x20young\x20children\x20have\x20virtually\x20no\x20room\x20in\x20their\x20diet\x20for\x20added\x20sugars.\x20This\x20is\x20because\x20the\x20nutrient\x20requirements\x20for\x20infants\x20and\x20young\x20children\x20are\x20quite\x20high\x20relative\x20to\x20their\x20size,\x20but\x20the\x20amount\x20of\x20complementary\x20foods\x20they\x20consume\x20is\x20small.\x20Complementary\x20foods\x20need\x20to\x20be\x20nutrient-dense\x20and\x20not\x20contain\x20additional\x20calories\x20from\x20added\x20sugars.\x20In\x20addition,\x20low-\x20and\x20no-calorie\x20sweeteners,\x20which\x20can\x20also\x20be\x20called\x20high-intensity\x20sweeteners,\x20are\x20not\x20recommended\x20for\x20children\x20younger\x20than\x20age\x202.\x20Taste\x20preferences\x20are\x20being\x20formed\x20during\x20this\x20time\x20period,\x20and\x20infants\x20and\x20young\x20children\x20may\x20develop\x20preferences\x20for\x20overly\x20sweet\x20foods\x20if\x20introduced\x20to\x20very\x20sweet\x20foods\x20during\x20this\x20timeframe', '412140LixywH', 'Perform\x20an\x20oral\x20food\x20challenge.\x20Based\x20on\x20test\x20results,\x20introduce\x20peanut-containing\x20foods.', 'False', '<b>Double-blind\x20placebo-controlled\x20oral\x20food\x20challenge\x20is\x20gold-standard\x20in\x20diagnosis\x20of\x20food\x20allergy</b><br>A\x20reliable\x20history\x20of\x20allergic\x20reactions\x20with\x20exposure\x20to\x20a\x20common/likely\x20food\x20item,\x20along\x20with\x20involvement\x20of\x20two\x20or\x20more\x20organ\x20systems\x20established\x20the\x20diagnosis\x20of\x20anaphylaxis\x20in\x20this\x20girl\x20and\x20hence\x20her\x20allergy\x20to\x20peanut.\x20Anaphylactic\x20reaction\x20can\x20interfere\x20with\x20the\x20results\x20of\x20skin\x20prick\x20test\x20and\x20less\x20probably\x20to\x20specific\x20IgE\x20(sIgE)\x20radioallergosorbent\x20test\x20(RAST).\x20It\x20is\x20therefore\x20plausible\x20to\x20maintain\x20comprehensive\x20avoidance\x20from\x20all\x20suspected\x20nuts\x20and\x20also\x20provide\x20the\x20parents\x20with\x20epinephrine\x20autoinjector,\x20until\x20the\x20follow-up\x20visit.\x20When\x20the\x20suspected\x20nut\x20is\x20identified,\x20RAST\x20can\x20strongly\x20predict\x20clinical\x20reactivity\x20to\x20peanut.\x20Positive\x20IgE\x20and\x20clinical\x20history\x20together\x20disclose\x20the\x20diagnosis\x20in\x20most\x20patients.\x20When\x20clinical\x20history\x20is\x20vague\x20or\x20sIgE\x20levels\x20are\x20equivocal,\x20a\x20double-blind\x20placebo-controlled\x20oral\x20food\x20challenge\x20(OFC)\x20with\x20items\x20of\x20suspect\x20from\x20prick\x20test\x20can\x20be\x20performed\x20to\x20establish\x20a\x20consensus\x20over\x20the\x20culprit\x20item.\x20Skin\x20prick\x20test\x20was\x20negative\x20for\x20almond\x20(3\x20mm),\x20tree\x20nut\x20(4\x20mm)\x20and\x20marginally\x20positive\x20for\x20peanut\x20(7\x20mm)\x20(histamine\x20control\x20=\x203\x20mm).\x20Peanut\x20sIgE\x20by\x20ImmunoCAP\x20was\x2013\x20IU/mL\x20(levels\x20between\x2013\x20to\x2015\x20IU/mL\x20have\x20a\x2095–99%\x20positive\x20predictive\x20value).\x20OFC\x20with\x20peanut\x20in\x20allergy\x20clinic\x20reproduced\x20wheezing\x20and\x20urticaria\x20in\x20the\x20girl,\x20confirming\x20her\x20diagnosis.', '27123KFyIUG', '4855784yLkCrh', 'First\x20exposure\x20commonly\x20occurs\x20in\x20early\x20childhood', 'Sardines', 'Co-allergy\x20to\x20other\x20nuts,\x20such\x20as\x20tree\x20nut\x20is\x20common', 'Plant-based\x20milk\x20alternatives,\x20which\x20are\x20sometimes\x20referred\x20to\x20as\x20milk\x20alternatives,\x20include\x20beverages\x20made\x20from\x20plants,\x20such\x20as\x20soy,\x20oat,\x20rice,\x20coconut,\x20and\x20almond.\x20These\x20beverages\x20should\x20not\x20be\x20used\x20in\x20the\x20first\x20year\x20of\x20life\x20to\x20replace\x20human\x20milk\x20or\x20infant\x20formula.\x20They\x20may\x20come\x20in\x20different\x20flavors\x20and\x20some\x20forms\x20have\x20added\x20sugars.\x20Unsweetened\x20versions\x20of\x20these\x20beverages\x20may\x20be\x20accommodated\x20in\x20small\x20amounts\x20in\x20the\x20diet\x20during\x20the\x20second\x20year\x20of\x20life,\x20but\x20most\x20have\x20significantly\x20less\x20protein\x20than\x20cow\x20milk\x20and\x20are\x20not\x20always\x20fortified\x20with\x20calcium\x20and\x20vitamin\x20D.\x20Among\x20plant-based\x20milk\x20alternatives,\x20only\x20fortified\x20soy\x20beverage\x20is\x20currently\x20considered\x20a\x20dairy\x20equivalent.\x20Thus,\x20consuming\x20other\x20plant-based\x20beverages\x20does\x20not\x20contribute\x20to\x20meeting\x20dairy\x20recommendations.', '#choices>li:nth-child(n)', 'Is\x20there\x20a\x20protective\x20benefit\x20from\x20the\x20use\x20of\x20hydrolyzed\x20formula\x20in\x20the\x20first\x20year\x20of\x20life\x20against\x20food\x20allergy\x20or\x20food\x20sensitization?', 'Diagnosis\x20requires\x20a\x20history\x20of\x20allergic\x20reaction\x20with\x20“oral”\x20exposure/ingestion\x20of\x20peanut\x20rather\x20than\x20topical\x20or\x20inhaled\x20exposure', 'Introduce\x20peanut-containing\x20foods\x20at\x201-year', 'True', 'Supplemental\x20water', 'Development\x20of\x20tolerance\x20is\x20common\x20in\x20peanut\x20allergy', 'Brough,\x20Helen\x20A.;\x20Liu,\x20Andrew\x20H.;\x20Sicherer,\x20Scott;\x20Makinson,\x20Kerry;\x20Douiri,\x20Abdel;\x20Brown,\x20Sara\x20J.;\x20Stephens,\x20Alick\x20C.;\x20Irwin\x20McLean,\x20W.H.;\x20Turcanu,\x20Victor;\x20Wood,\x20Robert\x20A.;\x20Jones,\x20Stacie\x20M.\x20(2015-01).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.jaci.2014.10.007\x22>\x22Atopic\x20dermatitis\x20increases\x20the\x20effect\x20of\x20exposure\x20to\x20peanut\x20antigen\x20in\x20dust\x20on\x20peanut\x20sensitization\x20and\x20likely\x20peanut\x20allergy\x22</a>.&nbsp;<i>Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.&nbsp;<b>135</b>&nbsp;(1):\x20164–170.e4.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2014.10.007\x22>10.1016/j.jaci.2014.10.007</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0091-6749\x22>0091-6749</a>.<br><br>', 'Low\x20Risk', '6\x20months', 'Beverages\x20containing\x20caffeine\x20should\x20be\x20avoided\x20for\x20children\x20younger\x20than\x20age\x20__.', 'Whole\x20grains\x20', 'The\x20following\x20food\x20is\x20not\x20considered\x20as\x20a\x20major\x20food\x20allergen\x20(among\x20top\x20eight)', '80TJntNk', '1-year', 'Peanut', 'Birth\x20Through\x20Age\x205\x20Months,\x20A\x20child\x20may\x20be\x20full\x20if\x20he\x20or\x20she:', 'Seafood,\x20nuts,\x20seeds,\x20and\x20oils', '\x20of\x20', 'Peanuts', '<br><br>', 'Recommend\x20avoiding\x20eggs,\x20peanuts,\x20and\x20other\x20highly\x20allergenic\x20foods', 'Has\x20clenched\x20hands.', '4\x20months', 'A\x20history\x20of\x20food-induced\x20reaction\x20with\x20typical\x20allergic\x20symptoms,\x20after\x20ingestion\x20of\x20peanut\x20is\x20enough\x20to\x20establish\x20the\x20diagnosis', 'Formula', '\x20The\x208\x20major\x20allergens\x20include:<br>Dairy,\x20Eggs,\x20Fish,\x20Shellfish,\x20Tree\x20nuts,\x20Peanuts,\x20Soy,\x20Wheat<br>The\x208\x20major\x20potentially\x20allergenic\x20foods\x20should\x20be\x20introduced\x20as\x20complementary\x20foods.<br><b>There\x20is\x20no\x20evidence\x20that\x20delaying\x20introduction\x20of\x20allergenic\x20foods\x20beyond\x206\x20months\x20prevents\x20food\x20allergy.</b><br>\x20\x20\x20\x20', 'High\x20Risk', 'Delayed\x20introduction\x20of\x20cow’s\x20milk\x20protein\x20was\x20associated\x20with\x20_____\x20rates\x20of\x20cow’s\x20milk\x20allergy.', 'Milk', 'disabled', 'Egg', 'Poultry', 'innerHTML', 'Which\x20of\x20the\x20following\x20Dietary\x20Components\x20should\x20be\x20avoided?', '27531636lEAvUH', 'Zinc-rich\x20complementary\x20foods\x20(e.g.,\x20meats,\x20beans,\x20zinc\x20fortified\x20infant\x20cereals)\x20are\x20important\x20from\x20age\x20_____\x20onwards\x20to\x20support\x20adequate\x20zinc\x20status,\x20which\x20supports\x20growth\x20and\x20immune\x20function.', '<a\x20href=\x22javascript:restart()\x22>Restart\x20quiz</a>', 'Puts\x20hands\x20to\x20mouth.', '0-4\x20months', '<table><tbody><tr><td\x20colspan=\x223\x22><div><strong>Signs\x20a\x20Child\x20is\x20Hungry\x20or\x20Full</strong></div></td></tr><tr><td></td><td><div>A\x20child\x20may\x20be\x20<b>hungry\x20</b>if\x20he\x20or\x20she:&nbsp;</div></td><td><div>A\x20child\x20may\x20be\x20<b>full\x20</b>if\x20he\x20or\x20she</div></td></tr><tr><td>Birth\x20Through\x20Age\x205\x20Months<br></td><td><div><div><br></div><ul><li>Puts\x20hands\x20to\x20mouth.&nbsp;</li><li><div>&nbsp;Turns\x20head\x20toward\x20breast\x20or\x20bottle.&nbsp;</div></li><li><div>Puckers,\x20smacks,\x20or\x20licks\x20lips.&nbsp;</div></li><li>Has\x20clenched\x20hands<br></li></ul></div></td><td><ul><li>Closes\x20mouth.&nbsp;</li><li>Turns\x20head\x20away\x20from\x20breast\x20or\x20bottle.&nbsp;</li><li>Relaxes\x20hands.<br></li></ul></td></tr><tr><td>Age\x206\x20Through\x2023\x20Month<br></td><td><ul><li>Reaches\x20for\x20or\x20points\x20to\x20food.&nbsp;</li><li>Opens\x20his\x20or\x20her\x20mouth\x20when\x20offered\x20a\x20spoon\x20or\x20food.&nbsp;</li><li>Gets\x20excited\x20when\x20he\x20or\x20she\x20sees\x20food.&nbsp;</li><li>Uses\x20hand\x20motions\x20or\x20makes\x20sounds\x20to\x20let\x20you\x20know\x20he\x20or\x20she\x20is\x20still\x20hungry<br></li></ul></td><td><ul><li>Pushes\x20food\x20away.&nbsp;</li><li>Closes\x20his\x20or\x20her\x20mouth\x20when\x20food\x20is\x20offered.&nbsp;</li><li>Turns\x20his\x20or\x20her\x20head\x20away\x20from\x20food.&nbsp;</li><li>Uses\x20hand\x20motions\x20or\x20makes\x20sounds\x20to\x20let\x20you\x20know\x20he\x20or\x20she\x20is\x20still\x20full.<br></li></ul></td></tr></tbody></table>', 'Roduit,\x20Caroline;\x20Frei,\x20Remo;\x20Depner,\x20Martin;\x20Schaub,\x20Bianca;\x20Loss,\x20Georg;\x20Genuneit,\x20Jon;\x20Pfefferle,\x20Petra;\x20Hyvärinen,\x20Anne;\x20Karvonen,\x20Anne\x20M.;\x20Riedler,\x20Josef;\x20Dalphin,\x20Jean-Charles\x20(2014-04).&nbsp;<a\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/24508301/\x22>\x22Increased\x20food\x20diversity\x20in\x20the\x20first\x20year\x20of\x20life\x20is\x20inversely\x20associated\x20with\x20allergic\x20diseases\x22</a>.&nbsp;<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.&nbsp;<b>133</b>&nbsp;(4):\x201056–1064.&nbsp;doi:<a\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2013.12.1044\x22>10.1016/j.jaci.2013.12.1044</a>.&nbsp;ISSN&nbsp;<a\x20href=\x22https://www.worldcat.org/issn/1097-6825\x22>1097-6825</a>.&nbspPMIDnbsp;<a\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/24508301\x22>24508301</a>.&nbsp;<br><br>Fleischer,\x20David\x20M.;\x20Chan,\x20Edmond\x20S.;\x20Venter,\x20Carina;\x20Spergel,\x20Jonathan\x20M.;\x20Abrams,\x20Elissa\x20M.;\x20Stukus,\x20David;\x20Groetch,\x20Marion;\x20Shaker,\x20Marcus;\x20Greenhawt,\x20Matthew\x20(2021-01).&nbsp;<a\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/33250376/\x22>\x22A\x20Consensus\x20Approach\x20to\x20the\x20Primary\x20Prevention\x20of\x20Food\x20Allergy\x20Through\x20Nutrition:\x20Guidance\x20from\x20the\x20American\x20Academy\x20of\x20Allergy,\x20Asthma,\x20and\x20Immunology;\x20American\x20College\x20of\x20Allergy,\x20Asthma,\x20and\x20Immunology;\x20and\x20the\x20Canadian\x20Society\x20for\x20Allergy\x20and\x20Clinical\x20Immunology\x22</a>.&nbsp;<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology.\x20In\x20Practice</i>.&nbsp;<b>9</b>&nbsp;(1):\x2022–43.e4.&nbsp;doi:<a\x20href=\x22https://doi.org/10.1016%2Fj.jaip.2020.11.002\x22>10.1016/j.jaip.2020.11.002</a>.&nbsp;ISSN&nbsp;<a\x20href=\x22https://www.worldcat.org/issn/2213-2201\x22>2213-2201</a>.&nbspPMID&nbsp;<a\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/33250376\x22>33250376</a>', 'black', 'Iron', 'Unprocessed\x20meat', 'Begin\x20small\x20amounts\x20of\x20highly\x20allergenic\x20foods\x20at\x20home', '401836TEqSpo', 'Vegetables,\x20whole\x20grains,\x20and\x20poultry', 'When\x20your\x20child\x20is\x20ready,\x20start\x20to\x20introduce\x20complementary\x20foods.<br>The\x20<b>ages\x20that\x20infants\x20show\x20signs\x20of\x20readiness\x20vary\x20and\x20are\x20typically\x20between\x20ages\x204\x20and\x206\x20months</b>.&nbsp;<br>Signs\x20that\x20your\x20child\x20may\x20be\x20ready\x20for\x20complementary\x20foods\x20include:\x20<br>•\x20Being\x20able\x20to\x20control\x20the\x20head\x20and\x20neck\x20<br>•\x20Sitting\x20up\x20alone\x20or\x20with\x20support\x20<br>•\x20Bringing\x20objects\x20to\x20the\x20mouth\x20<br>•\x20Trying\x20to\x20grasp\x20small\x20objects,\x20such\x20as\x20food\x20or\x20toys\x20<br>•\x20Swallowing\x20food\x20rather\x20than\x20pushing\x20it\x20back\x20out\x20onto\x20the\x20chin&nbsp;<br><br>There\x20is\x20no\x20evidence\x20that\x20delaying\x20introduction\x20of\x20allergenic\x20foods\x20helps\x20prevent\x20food\x20allergy&nbsp;<br><br><b>Introduce\x20complementary\x20foods\x20no\x20later\x20than\x206\x20months!</b><br><b><br></b>Infants\x20should\x20be\x20encouraged\x20to\x20consume\x20a\x20variety\x20of\x20complementary\x20foods:<br>•\x20Introduce\x20iron-rich\x20foods:\x20meats,\x20seafood,\x20iron-fortified\x20infant\x20cereals\x20<br>•\x20Introduce\x20zinc-rich\x20foods:\x20meats,\x20beans,\x20zinc-fortified\x20infant\x20cereals\x20<br>•\x20Introduce\x20a\x20variety\x20of\x20foods\x20from\x20all\x20food\x20groups:\x20protein,\x20fruits\x20and\x20vegetables,\x20dairy,\x20grains\x20<br>•\x20Introduce\x20potentially\x20allergenic\x20food\x20groups:\x20egg,\x20dairy,\x20peanuts,\x20tree\x20nuts,\x20soy,\x20dairy,\x20shellfish,\x20fish,\x20wheat&nbsp;', '1\x20year', 'prepend', 'hide', 'Puckers,\x20smacks,\x20or\x20licks\x20lips.', '2\x20months', 'append', 'color', '#extra', 'click', 'replace', '2810159ZneOSh', 'extra', 'Risk\x20of\x20developing\x20diabetes\x20later\x20in\x20life', 'answerChoiceList', 'When\x20should\x20you\x20start\x20to\x20introduce\x20complementary\x20foods?', 'qnumber', 'removeClass', 'length', 'Introduction\x20of\x20_____\x20in\x20the\x20first\x20year\x20of\x20life\x20showed\x20a\x20reduction\x20in\x20the\x20prevalence\x20of\x20food\x20allergy\x20in\x20the\x20first\x206\x20years\x20of\x20life', 'Roduit,\x20Caroline;\x20Frei,\x20Remo;\x20Depner,\x20Martin;\x20Schaub,\x20Bianca;\x20Loss,\x20Georg;\x20Genuneit,\x20Jon;\x20Pfefferle,\x20Petra;\x20Hyvärinen,\x20Anne;\x20Karvonen,\x20Anne\x20M.;\x20Riedler,\x20Josef;\x20Dalphin,\x20Jean-Charles\x20(2014-04).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/24508301/\x22>\x22Increased\x20food\x20diversity\x20in\x20the\x20first\x20year\x20of\x20life\x20is\x20inversely\x20associated\x20with\x20allergic\x20diseases\x22</a>.\x20<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.\x20<b>133</b>\x20(4):\x201056–1064.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2013.12.1044\x22>10.1016/j.jaci.2013.12.1044</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1097-6825\x22>1097-6825</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/24508301\x22>24508301</a>.\x20<br><br>', 'Fleischer,\x20David\x20M.;\x20Chan,\x20Edmond\x20S.;\x20Venter,\x20Carina;\x20Spergel,\x20Jonathan\x20M.;\x20Abrams,\x20Elissa\x20M.;\x20Stukus,\x20David;\x20Groetch,\x20Marion;\x20Shaker,\x20Marcus;\x20Greenhawt,\x20Matthew\x20(2021-01).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/33250376/\x22>\x22A\x20Consensus\x20Approach\x20to\x20the\x20Primary\x20Prevention\x20of\x20Food\x20Allergy\x20Through\x20Nutrition:\x20Guidance\x20from\x20the\x20American\x20Academy\x20of\x20Allergy,\x20Asthma,\x20and\x20Immunology;\x20American\x20College\x20of\x20Allergy,\x20Asthma,\x20and\x20Immunology;\x20and\x20the\x20Canadian\x20Society\x20for\x20Allergy\x20and\x20Clinical\x20Immunology\x22</a>.\x20<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology.\x20In\x20Practice</i>.\x20<b>9</b>\x20(1):\x2022–43.e4.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaip.2020.11.002\x22>10.1016/j.jaip.2020.11.002</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/2213-2201\x22>2213-2201</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/33250376\x22>33250376</a><br><br>', 'getElementById', '$1-$2', 'For\x20healthy\x20infants\x20with\x20adequate\x20intake\x20of\x20human\x20milk\x20or\x20infant\x20formula,\x20supplemental\x20water\x20is\x20typically\x20not\x20needed\x20in\x20the\x20first\x206\x20months.\x20Small\x20amounts\x20(up\x20to\x204\x20to\x208\x20ounces\x20per\x20day)\x20of\x20plain,\x20fluoridated\x20drinking\x20water\x20can\x20be\x20given\x20to\x20infants\x20with\x20the\x20introduction\x20of\x20complementary\x20foods.\x20Plain,\x20fluoridated\x20drinking\x20water\x20intake\x20can\x20slowly\x20be\x20increased\x20after\x20age\x201\x20to\x20meet\x20hydration\x20and\x20fluoride\x20needs.\x20', 'lower', 'A\x206-month-old\x20boy\x20is\x20brought\x20to\x20the\x20clinic\x20for\x20a\x20routine\x20well-child\x20check.\x20The\x20patient\x20was\x20exclusively\x20breastfed\x20for\x20the\x20first\x204\x20months\x20of\x20life.\x20Over\x20the\x20past\x202\x20months,\x20his\x20family\x20has\x20gradually\x20introduced\x20complementary\x20foods,\x20including\x20cereals\x20and\x20several\x20infant\x20fruit\x20and\x20vegetable\x20products,\x20into\x20his\x20diet.\x20The\x20family\x20is\x20concerned\x20about\x20introducing\x20highly\x20allergenic\x20foods\x20such\x20as\x20peanuts,\x20shellfish,\x20and\x20eggs\x20because\x20the\x20patient\x27s\x20cousin\x20was\x20hospitalized\x20after\x20developing\x20a\x20severe\x20allergic\x20reaction\x20to\x20eggs.\x20The\x20patient\x20is\x20developing\x20normally\x20and\x20growing\x20at\x20the\x2050th\x20percentile\x20for\x20weight.\x20His\x20medications\x20include\x20a\x20vitamin\x20D\x20supplement\x20and\x20petroleum\x20jelly\x20for\x20dry\x20skin.\x20Heart,\x20lung,\x20and\x20abdominal\x20examinations\x20are\x20normal.\x20There\x20are\x20small,\x20dry,\x20scaly\x20patches\x20of\x20skin\x20over\x20the\x20extensor\x20surfaces\x20of\x20the\x20extremities.\x20Which\x20of\x20the\x20following\x20is\x20the\x20best\x20approach\x20to\x20the\x20introduction\x20of\x20highly\x20allergenic\x20foods\x20in\x20this\x20patient?', 'Vitamin\x20D', 'What\x20food\x20can\x20cause\x20botulism\x20and\x20should\x20be\x20avoided\x20in\x20infants?', '3\x20months', '<table\x20class=\x22wp-block-table\x20has-fixed-layout\x22><thead><tr><th>Infant\x20Criteria</th><th>Recommendations</th><th>Earliest\x20Age\x20of\x20Peanut\x20Introduction</th></tr></thead><tbody><tr><td>Severe\x20eczema,\x20egg\x20allergy,\x20or\x20both</td><td>Strongly\x20consider\x20evaluation\x20with\x20peanut-specific\x20IgE\x20and/or\x20skin\x20prick\x20test\x20and,\x20if\x20necessary,\x20an\x20oral\x20food\x20challenge.\x20Based\x20on\x20test\x20results,\x20introduce\x20peanut-containing\x20foods.</td><td>4\x20to\x206\x20months</td></tr><tr><td>Mild\x20to\x20moderate\x20eczema</td><td>Introduce\x20peanut-containing\x20foods.</td><td>Around\x206\x20months</td></tr><tr><td>No\x20eczema\x20or\x20any\x20food\x20allergy</td><td>Introduce\x20peanut-containing\x20foods.</td><td>Age\x20appropriate\x20and\x20in\x20accordance\x20with\x20family\x20preferences\x20and\x20cultural\x20practices</td></tr></tbody></table>', '<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.52570/DGAC2020\x22>\x22Scientific\x20Report\x20of\x20the\x202020\x20Dietary\x20Guidelines\x20Advisory\x20Committee:\x20Advisory\x20Report\x20to\x20the\x20Secretary\x20of\x20Agriculture\x20and\x20Secretary\x20of\x20Health\x20and\x20Human\x20Services\x22</a>.\x202020-07-15.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.52570%2Fdgac2020\x22>10.52570/dgac2020</a>.', '9KmvGwk', 'Evaluate\x20with\x20peanut-specific\x20IgE\x20and/or\x20skin\x20prick\x20test', 'It\x20is\x20one\x20of\x20the\x20most\x20common\x20causes\x20of\x20food\x20allergy\x20worldwide', 'Togias,\x20Alkis;\x20Cooper,\x20Susan\x20F.;\x20Acebal,\x20Maria\x20L.;\x20Assa\x27ad,\x20Amal;\x20Baker,\x20James\x20R.;\x20Beck,\x20Lisa\x20A.;\x20Block,\x20Julie;\x20Byrd-Bredbenner,\x20Carol;\x20Chan,\x20Edmond\x20S.;\x20Eichenfield,\x20Lawrence\x20F.;\x20Fleischer,\x20David\x20M.\x20(2017-01).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/28065278/\x22>\x22Addendum\x20guidelines\x20for\x20the\x20prevention\x20of\x20peanut\x20allergy\x20in\x20the\x20United\x20States:\x20Report\x20of\x20the\x20National\x20Institute\x20of\x20Allergy\x20and\x20Infectious\x20Diseases-sponsored\x20expert\x20panel\x22</a>.\x20<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.\x20<b>139</b>\x20(1):\x2029–44.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2016.10.010\x22>10.1016/j.jaci.2016.10.010</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1097-6825\x22>1097-6825</a>.\x20PMC\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5226648\x22>5226648</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/28065278\x22>28065278</a>.<br><br>', 'Question\x20', 'early\x20introduction', 'Allergy\x20to\x20nuts\x20and\x20seeds\x20is\x20amongst\x20the\x20most\x20common\x20food\x20allergies\x20worldwide.\x20Prevalence\x20of\x20peanut\x20allergy\x20reaches\x20to\x20up\x20to\x201–2%\x20in\x20United\x20States,\x20while\x20the\x20condition\x20is\x20considered\x20to\x20be\x20rare\x20in\x20most\x20Asian\x20countries.\x20Besides\x20a\x20personal\x20or\x20family\x20history\x20of\x20atopy,\x20early\x20exposure\x20to\x20peanut\x20oil\x20in\x20skin\x20care\x20products\x20and\x20household\x20exposures\x20are\x20considered\x20risk\x20factors\x20for\x20childhood\x20peanut\x20allergy.\x20Sensitization\x20to\x20peanut\x20occurs\x20early\x20after\x20birth\x20and\x20most\x20children\x20(approx.\x2075%)\x20show\x20symptoms\x20during\x20first\x20direct\x20exposure\x20to\x20the\x20suspected\x20nut/seed.\x20Up\x20to\x20one\x20half\x20of\x20children\x20with\x20peanut\x20allergy\x20are\x20also\x20allergic\x20to\x20tree\x20nuts,\x20and\x20co-allergy\x20to\x20other\x20nuts\x20occurs\x20in\x20up\x20to\x20one\x20half\x20of\x20patients\x20with\x20tree\x20nut\x20allergy.\x20Systemic\x20reaction\x20is\x20common\x20and\x20is\x20seen\x20in\x20at\x20least\x20half\x20of\x20all\x20IgE-mediated\x20acute\x20reactions\x20to\x20peanut.\x20Peanut\x20and\x20tree\x20nut\x20allergy\x20account\x20for\x20the\x20majority\x20of\x20food-induced\x20anaphylactic\x20reactions.', '14VsndCz', 'Caregivers\x20of\x20infants\x20exclusively\x20fed\x20human\x20milk\x20should\x20talk\x20with\x20their\x20pediatric\x20care\x20provider\x20about\x20whether\x20there\x20may\x20be\x20a\x20need\x20for\x20infants\x20supplementation\x20with\x20iron\x20before\x20age\x206\x20months.\x20A\x20complementary\x20food\x20source\x20of\x20iron\x20beginning\x20at\x20about\x206\x20months\x20is\x20particularly\x20important\x20for\x20infants\x20fed\x20human\x20milk\x20because\x20the\x20iron\x20content\x20of\x20human\x20milk\x20is\x20low\x20and\x20maternal\x20iron\x20intake\x20during\x20lactation\x20does\x20not\x20increase\x20its\x20content.\x20In\x20the\x20United\x20States,\x20an\x20estimated\x2077\x20percent\x20of\x20infants\x20fed\x20human\x20milk\x20have\x20inadequate\x20iron\x20intake\x20during\x20the\x20second\x20half\x20of\x20infancy,\x20highlighting\x20the\x20importance\x20of\x20introducing\x20iron-rich\x20foods\x20starting\x20at\x20age\x206\x20months.', 'This\x20is\x20done\x20for\x20infants\x20with\x20severe\x20eczema,\x20egg\x20allergy,\x20or\x20both', 'late\x20introduction', 'For\x20Moderate\x20Risk\x20Infants,\x20it\x20is\x20recommended\x20to\x20recommend\x20to\x20introduce\x20peanuts\x20at\x20home,\x20starting\x20at\x20_____\x20of\x20age', 'Beverages\x20made\x20from\x20plants,\x20such\x20as\x20soy,\x20oat,\x20rice,\x20coconut,\x20and\x20almond', '6raUpOn', 'There\x20is\x20lack\x20of\x20evidence\x20that\x20partially\x20or\x20extensively\x20hydrolyzed\x20formula\x20prevents\x20atopic\x20disease\x20in\x20infants\x20and\x20children,\x20even\x20in\x20those\x20at\x20high\x20risk\x20for\x20allergic\x20disease.\x20This\x20point\x20is\x20a\x20change\x20from\x20the\x202008\x20AAP\x20clinical\x20report,\x20which\x20concluded\x20that\x20there\x20was\x20modest\x20evidence\x20that\x20the\x20use\x20of\x20either\x20partially\x20or\x20exclusively\x20hydrolyzed\x20formula\x20prevents\x20atopic\x20dermatitis\x20in\x20high-risk\x20infants\x20who\x20are\x20formula\x20fed\x20or\x20initially\x20breastfed\x20after\x20birth.', 'keys', 'An\x20infant\x20without\x20severe,\x20refractory\x20eczema\x20or\x20an\x20IgE-mediated\x20food\x20allergy\x20is\x20considered\x20low\x20risk\x20for\x20developing\x20food\x20allergies,\x20and\x20early\x20introduction\x20of\x20highly\x20allergenic\x20foods\x20after\x20age\x204-6\x20months\x20is\x20recommended.', 'Exclusive\x20breastfeeding\x20and/or\x20a\x20documented\x20hypoallergenic\x20formula\x20during\x20the\x20first\x204\x20months\x20of\x20life', 'Placebo-controlled\x20oral\x20food\x20challenge\x20test\x20is\x20gold-standard\x20and\x20first\x20step\x20in\x20diagnosis\x20of\x20food\x20allergy', '<b>Breastfeeding\x20is\x20encouraged\x20for\x20all\x20infants</b>.\x20Hydrolyzed\x20infant\x20formulas\x20are\x20suggested\x20for\x20infants\x20at\x20risk,\x20while\x20<b>complementary\x20food\x20including\x20potential\x20allergens\x20are\x20not\x20restricted\x20after\x204–6\x20\x20months</b>\x20(of\x20course\x20not\x20for\x20infants\x20experiencing\x20allergic\x20reactions\x20to\x20those\x20food).\x20Maternal\x20diet\x20during\x20pregnancy\x20should\x20be\x20healthy\x20and\x20balanced\x20as\x20<b>evidence\x20to\x20support\x20avoidance\x20of\x20potential\x20food\x20allergens,\x20during\x20pregnancy\x20are\x20lacking</b>.\x20Early\x20dietary\x20intervention\x20in\x20high\x20risk\x20infants\x20can\x20reduce\x20the\x20risk\x20for\x20developing\x20food\x20allergy\x20and\x20eczema,\x20but\x20does\x20not\x20appear\x20to\x20modify\x20the\x20natural\x20course\x20of\x20the\x20allergic\x20march\x20in\x20the\x20long\x20run.', 'Before\x20age\x2012\x20months,\x20100%\x20fruit\x20or\x20vegetable\x20juices\x20should\x20not\x20be\x20given\x20to\x20infants.\x20In\x20the\x20second\x20year\x20of\x20life,\x20fruit\x20juice\x20is\x20not\x20necessary,\x20and\x20most\x20fruit\x20intake\x20should\x20come\x20from\x20eating\x20whole\x20fruit.\x20If\x20100%\x20fruit\x20juice\x20is\x20provided,\x20up\x20to\x204\x20ounces\x20per\x20day\x20can\x20fit\x20in\x20a\x20healthy\x20dietary\x20pattern.\x20Juices\x20that\x20contain\x20added\x20sugars\x20should\x20be\x20avoided.', 'There\x20is\x20moderate\x20evidence\x20that\x20<b>egg\x20introduction\x20at\x20around\x206\x20months\x20is\x20associated\x20with\x20a\x20lower\x20prevalence\x20of\x20egg\x20allergy\x20versus\x20later\x20introduction</b>.<br>Egg\x20allergy\x20currently\x20impacts\x20approximately\x202%\x20of\x20the\x20US\x20population\x20under\x205\x20years\x20of\x20age.\x20Current\x20guidelines\x20emphasize\x20the\x20importance\x20of\x20early\x20introduction\x20of\x20highly\x20allergenic\x20foods,\x20including\x20egg,\x20as\x20a\x20means\x20of\x20food\x20allergy\x20prevention.\x20This\x20shift\x20in\x20guidance\x20has\x20led\x20to\x20a\x20younger\x20patient\x20population\x20presenting\x20with\x20egg\x20allergy\x20concerns,\x20and\x20currently,\x20there\x20is\x20limited\x20research\x20on\x20egg\x20restriction’s\x20impact\x20on\x20the\x20nutrition,\x20growth,\x20and\x20development\x20of\x20infants\x20and\x20toddlers.<br>Egg\x20products\x20can\x20be\x20prepared\x20in\x20a\x20variety\x20of\x20ways,\x20including\x20as\x20baked-in\x20egg,\x20and\x20lesser\x20cooked\x20forms\x20of\x20egg\x20including\x20pancakes/waffles,\x20French\x20toast,\x20and\x20scrambled/fried\x20egg.\x20Baked\x20egg\x20is\x20egg\x20as\x20a\x20minor\x20ingredient\x20in\x20a\x20baked\x20good\x20that\x20is\x20fully\x20cooked\x20through\x20in\x20dry\x20oven\x20heat,\x20while\x20scrambled/fried\x20egg\x20is\x20an\x20egg\x20that\x20has\x20been\x20cooked\x20on\x20a\x20stove\x20top\x20heat.\x20If\x20a\x20patient\x20reacts\x20to\x20scrambled\x20egg\x20(one\x20of\x20the\x20lesser\x20cooked\x20forms\x20of\x20egg),\x20but\x20is\x20able\x20to\x20tolerate\x20more\x20cooked\x20forms\x20of\x20egg\x20such\x20as\x20pancakes/waffles,\x20it\x20is\x20<b>beneficial\x20to\x20maintain\x20the\x20least\x20cooked\x20form\x20of\x20egg\x20tolerated\x20in\x20that\x20patient’s\x20diet.\x20</b>', 'Yes', 'Concept\x20of\x20early\x20introduction:<ul><li>Primary\x20care\x20providers\x20should\x20implement\x20talking\x20points\x20surrounding\x20early\x20introduction\x20into\x20<b>all\x20well-child\x20visits,\x20beginning\x20at\x20birth\x20and\x20repeated\x20at\x20age\x202,\x204,\x206,\x20and\x209\x20mo</b>.\x20</li><li>\x20Allergists\x20seeing\x20infants\x20for\x20conditions\x20such\x20as\x20atopic\x20dermatitis\x20should\x20discuss\x20concepts\x20surrounding\x20early\x20introduction\x20with\x20families.\x20</li><li>\x20Obstetricians\x20can\x20introduce\x20these\x20concepts\x20with\x20expecting\x20parents\x20to\x20help\x20them\x20increase\x20awareness\x20and\x20understanding.</li></ul>', 'Sheehan,\x20William\x20J.;\x20Taylor,\x20Steve\x20L.;\x20Phipatanakul,\x20Wanda;\x20Brough,\x20Helen\x20A.\x20(2018-11).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.jaip.2018.08.001\x22>\x22Environmental\x20Food\x20Exposure:\x20What\x20Is\x20the\x20Risk\x20of\x20Clinical\x20Reactivity\x20From\x20Cross-Contact\x20and\x20What\x20Is\x20the\x20Risk\x20of\x20Sensitization\x22</a>.&nbsp;<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology:\x20In\x20Practice</i>.&nbsp;<b>6</b>&nbsp;(6):\x201825–1832.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaip.2018.08.001\x22>10.1016/j.jaip.2018.08.001</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/2213-2198\x22>2213-2198</a>.<br><br>', 'There\x20is\x20moderate\x20evidence\x20that\x20egg\x20introduction\x20at\x20around\x20_____\x20is\x20associated\x20with\x20a\x20lower\x20prevalence\x20of\x20egg\x20allergy\x20versus\x20later\x20introduction.', 'Meat,\x20poultry,\x20eggs,\x20and\x20dairy', 'References', 'Resume\x20exclusive\x20breastfeeding\x20until\x201\x20year\x20of\x20age', '.disabled', 'Delay\x20introduction\x20of\x20eggs\x20and\x20other\x20high-risk\x20foods\x20until\x202\x20years\x20of\x20age', 'Fortified\x20unsweetened\x20soy\x20beverages', 'Honey', 'Boyce\x20JA,\x20Assa\x27ad\x20A,\x20Burks\x20AW,\x20et\x20al.\x20(December\x202010).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4241958\x22>\x22Guidelines\x20for\x20the\x20Diagnosis\x20and\x20Management\x20of\x20Food\x20Allergy\x20in\x20the\x20United\x20States:\x20Summary\x20of\x20the\x20NIAID-Sponsored\x20Expert\x20Panel\x20Report\x22</a>.\x20<i>J.\x20Allergy\x20Clin.\x20Immunol</i>.\x20<b>126</b>\x20(6):\x201105–18.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2010.10.008\x22>10.1016/j.jaci.2010.10.008</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0091-6749\x22>0091-6749</a>.\x20PMC\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4241958\x22>4241958</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/21134568\x22>21134568</a><br><br>', 'Delayed\x20introduction\x20of\x20highly\x20allergenic\x20foods\x20is\x20not\x20recommended\x20due\x20to\x20the\x20increased\x20risk\x20of\x20food\x20allergies.', 'addClass', 'slice', 'css', 'choice', 'higher', 'Testing\x204\x20options', 'May\x20develop\x20taste\x20preference\x20for\x20sweet\x20foods', '2\x20years', '78DjVTqY', 'All\x20infants\x20who\x20are\x20fed\x20human\x20milk\x20exclusively\x20or\x20who\x20receive\x20both\x20human\x20milk\x20and\x20infant\x20formula\x20(mixed\x20fed)\x20will\x20need\x20supplementation\x20with\x20____', 'show', '<hr>', 'question', '7388630sJHLtc', 'Incorrect,\x20try\x20again!<br>', 'For\x20infants\x20with\x20mild\x20to\x20moderate\x20eczema,\x20you\x20should', 'Current\x20guidelines\x20emphasize\x20the\x20importance\x20of\x20_____\x20of\x20\x0ahighly\x20allergenic\x20foods,\x20including\x20egg,\x20as\x20a\x20means\x20of\x20food\x20allergy\x20\x0aprevention', 'Lack,\x20Gideon\x20(2012-05).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/22464642/\x22>\x22Update\x20on\x20risk\x20factors\x20for\x20food\x20allergy\x22</a>.\x20<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.\x20<b>129</b>\x20(5):\x201187–1197.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2012.02.036\x22>10.1016/j.jaci.2012.02.036</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1097-6825\x22>1097-6825</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/22464642\x22>22464642</a>.\x20<br><br>', '<hr><b>References</b><br><br>', 'Breastmilk', 'Du\x20Toit,\x20George;\x20Sampson,\x20Hugh\x20A.;\x20Plaut,\x20Marshall;\x20Burks,\x20A.\x20Wesley;\x20Akdis,\x20Cezmi\x20A.;\x20Lack,\x20Gideon\x20(2018-01).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/29191680/\x22>\x22Food\x20allergy:\x20Update\x20on\x20prevention\x20and\x20tolerance\x22</a>.\x20<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.\x20<b>141</b>\x20(1):\x2030–40.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2017.11.010\x22>10.1016/j.jaci.2017.11.010</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1097-6825\x22>1097-6825</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/29191680\x22>29191680</a>.<br><br>', 'avoidance', 'Congratulations!\x20You\x20have\x20completed\x20the\x20quiz<br><br>You\x20got\x20', 'All\x20of\x20the\x20above', '#next', 'Forsthuber,\x20Thomas\x20G.;\x20Radstake,\x20Timothy\x20R.\x20D.\x20J.\x20(2015-01).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/25534976/\x22>\x22Expert\x20Review\x20of\x20Clinical\x20Immunology\x2010-year\x20anniversary\x20issue.\x20Foreword\x22</a>.\x20<i>Expert\x20Review\x20of\x20Clinical\x20Immunology</i>.\x20<b>11</b>\x20(1):\x201–3.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1586%2F1744666X.2015.997215\x22>10.1586/1744666X.2015.997215</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1744-8409\x22>1744-8409</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/25534976\x22>25534976</a>.\x20<br><br>', 'Infants\x20should\x20not\x20consume\x20cow\x20milk\x20or\x20fortified\x20soy\x20beverages\x20before\x20age\x2012\x20months\x20to\x20replace\x20human\x20milk\x20or\x20infant\x20formula.\x20Cow\x20milk\x20does\x20not\x20have\x20the\x20correct\x20amount\x20of\x20nutrients\x20for\x20infants,\x20and\x20its\x20higher\x20protein\x20and\x20mineral\x20content\x20are\x20hard\x20for\x20an\x20infant’s\x20kidneys\x20and\x20digestive\x20system\x20to\x20process.\x20Plain\x20cow\x20milk\x20(whole\x20milk)\x20or\x20fortified\x20unsweetened\x20soy\x20beverage\x20can\x20be\x20offered\x20beginning\x20around\x2012\x20months\x20of\x20age\x20to\x20help\x20meet\x20calcium,\x20potassium,\x20vitamin\x20D,\x20and\x20protein\x20needs.\x20Flavored\x20milks\x20for\x20children\x20age\x2012\x20through\x2023\x20months\x20should\x20be\x20avoided\x20because\x20they\x20contain\x20added\x20sugars.', 'Dietary\x20Components\x20to\x20Avoid:<br>•\x20Honey\x20and\x20unpasteurized\x20foods\x20and\x20beverages\x20<br>•\x20Sugar-sweetened\x20beverages\x20(ex.\x20soda,\x20sweet\x20tea)\x20<br>•\x20<b>Liquid\x20cow’s\x20milk</b>,\x20fortified\x20soy\x20beverages,\x20and\x20milk\x20alternatives\x20(such\x20as\x20plant-based\x20milk)\x20in\x20place\x20of\x20breastmilk\x20or\x20infant\x20formula\x20<br>•\x20Caffeinated\x20beverages\x20<br>•\x20Seafood\x20with\x20high\x20mercury\x20content\x20<br>•\x20Loose\x20nuts\x20and\x20other\x20choke-risk\x20foods', 'High-risk\x20infants\x20have\x20severe,\x20refractory\x20eczema\x20and/or\x20a\x20known/suspected\x20IgE-mediated\x20food\x20allergy.\x20Allergy\x20testing\x20(eg,\x20IgE\x20levels,\x20skin\x20testing)\x20is\x20recommended\x20prior\x20to\x20the\x20introduction\x20of\x20highly\x20allergenic\x20foods\x20in\x20high-risk\x20infants.\x20Depending\x20on\x20the\x20results,\x20a\x20food\x20challenge\x20may\x20be\x20performed\x20in\x20the\x20office\x20(ie,\x20mild\x20to\x20moderate\x20skin\x20reaction)\x20or\x20complete\x20avoidance\x20may\x20be\x20advised\x20(ie,\x20large\x20wheal\x20on\x20skin\x20test)\x20until\x20testing\x20is\x20repeated\x20the\x20following\x20year', 'Risk\x20of\x20obesity', 'Skin\x20prick\x20test\x20should\x20be\x20avoided\x20when\x20peanut\x20allergy\x20is\x20suspected\x20due\x20to\x20a\x20high\x20risk\x20of\x20anaphylaxis', 'Turns\x20head\x20toward\x20breast\x20or\x20bottle.', 'https://famp-it.org/earlyfood/leap-guidelines/', '#5fb665', 'Fruit\x20juice', '#choices>li:nth-child(', 'Introduce\x20peanut-containing\x20foods\x20around\x206\x20months', '<b>Neither\x20peanut\x20nor\x20egg\x20should\x20be\x20the\x20first\x20food\x20offered\x20to\x20an\x20infant\x20starting\x20solid\x20foods</b>\x20<b>because\x20it\x20may\x20be\x20difficult\x20to\x20distinguish\x20between\x20an\x20inability\x20to\x20manage\x20complementary\x20food,\x20which\x20may\x20result\x20in\x20gagging,\x20vomiting,\x20or\x20coughing\x20in\x20the\x20infant;\x20these\x20symptoms\x20may\x20be\x20incorrectly\x20interpreted\x20as\x20an\x20allergic\x20reaction</b>.\x20Peanut\x20or\x20egg\x20should\x20only\x20be\x20introduced\x20to\x20an\x20infant\x20soon\x20after\x20he\x20or\x20she\x20has\x20tolerated\x20a\x20few\x20other\x20typical\x20starter\x20foods\x20such\x20as\x20stage\x201\x20fruits,\x20vegetables,\x20or\x20grains;\x20the\x20addition\x20of\x20these\x20foods\x20first\x20can\x20provide\x20options\x20in\x20which\x20to\x20mix\x20peanut\x20powder/flour\x20or\x20peanut\x20butter,\x20which\x20should\x20not\x20be\x20fed\x20unmodified.', 'Al-Muhsen\x20S,\x20Clarke\x20AE,\x20Kagan\x20RS\x20(2003).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.ncbi.nlm.nih.gov/pmc/articles/PMC154188\x22>\x22Peanut\x20allergy:\x20an\x20overview\x22</a>.\x20<i>CMAJ</i>.\x20<b>168</b>\x20(10):\x201279–1285.\x20PMC\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.ncbi.nlm.nih.gov/pmc/articles/PMC154188\x22>154188</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/12743075\x22>12743075</a>.<br><br>', '.submit', 'added', 'MALONEY,\x20J;\x20CHAPMAN,\x20M;\x20SICHERER,\x20S\x20(2006-09).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.jaci.2006.05.017\x22>\x22Peanut\x20allergen\x20exposure\x20through\x20saliva:\x20Assessment\x20and\x20interventions\x20to\x20reduce\x20exposure\x22</a>.&nbsp;<i>Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.&nbsp;<b>118</b>&nbsp;(3):\x20719–724.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2006.05.017\x22>10.1016/j.jaci.2006.05.017</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0091-6749\x22>0091-6749</a>.<br><br>', 'Protein\x20foods,\x20including\x20meats,\x20poultry,\x20eggs,\x20seafood,\x20nuts,\x20seeds,\x20and\x20soy\x20products,\x20are\x20important\x20sources\x20of\x20iron,\x20zinc,\x20protein,\x20choline,\x20and\x20long\x20chain\x20polyunsaturated\x20fatty\x20acids.\x20The\x20long-chain\x20polyunsaturated\x20fatty\x20acids,\x20specifically\x20the\x20essential\x20omega-3\x20and\x20omega-6\x20fatty\x20acids\x20supplied\x20through\x20seafood,\x20nuts,\x20seeds,\x20and\x20oils,\x20influence\x20the\x20infant’s\x20fatty\x20acid\x20status\x20and\x20are\x20among\x20the\x20key\x20nutrients\x20needed\x20for\x20the\x20rapid\x20brain\x20development\x20that\x20occurs\x20through\x20the\x20infant’s\x20first\x202\x20years\x20of\x20life.\x20Some\x20types\x20of\x20fish\x20such\x20as\x20salmon\x20and\x20trout\x20are\x20also\x20natural\x20sources\x20of\x20vitamin\x20D.\x20To\x20limit\x20exposure\x20to\x20methylmercury\x20from\x20seafood,\x20the\x20U.S.\x20Food\x20and\x20Drug\x20Administration\x20and\x20the\x20U.S.\x20Environmental\x20Protection\x20Agency\x20issued\x20joint\x20guidance\x20regarding\x20the\x20types\x20of\x20seafood\x20to\x20choose.', 'Essential\x20omega-3\x20and\x20omega-6\x20fatty\x20acids\x20are\x20supplied\x20through\x20what\x20food\x20sources?', 'Relaxes\x20hands.', 'answer', 'Brough,\x20H.\x20A.;\x20Kull,\x20I.;\x20Richards,\x20K.;\x20Hallner,\x20E.;\x20Söderhäll,\x20C.;\x20Douiri,\x20A.;\x20Penagos,\x20M.;\x20Melén,\x20E.;\x20Bergström,\x20A.;\x20Turcanu,\x20V.;\x20Wickman,\x20M.\x20(2018-03-23).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1111/cea.13111\x22>\x22Environmental\x20peanut\x20exposure\x20increases\x20the\x20risk\x20of\x20peanut\x20sensitization\x20in\x20high-risk\x20children\x22</a>.&nbsp;<i>Clinical&nbsp;&amp;&nbsp;Experimental\x20Allergy</i>.&nbsp;<b>48</b>&nbsp;(5):\x20586–593.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1111%2Fcea.13111\x22>10.1111/cea.13111</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0954-7894\x22>0954-7894</a>.Lack,\x20Gideon\x20(2012-05).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.jaci.2012.02.036\x22>\x22Update\x20on\x20risk\x20factors\x20for\x20food\x20allergy\x22</a>.&nbsp;<i>Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.&nbsp;<b>129</b>&nbsp;(5):\x201187–1197.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2012.02.036\x22>10.1016/j.jaci.2012.02.036</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0091-6749\x22>0091-6749</a>.<br><br>', 'Sesame', 'log', 'I\x27m\x20correct', 'What\x20is\x20typically\x20not\x20needed\x20for\x20healthy\x20infants\x20in\x20the\x20first\x206\x20months?'];
-    _0x5658 = function () {
-        return _0xc94af2;
-    };
-    return _0x5658();
+address = _0x2ee787(0x87), address = address[_0x2ee787(0x8d)](0x14), address2 = address['replace'](RegExp('(.*?)/(.*?)/', 'gi'), _0x2ee787(0x89)), address2 = address2[_0x2ee787(0x9b)](RegExp('-', 'gi'), '_'), address = address[_0x2ee787(0x9b)](RegExp(_0x2ee787(0xad), 'gi'), '$1'), address = address[_0x2ee787(0x9b)](RegExp('-', 'gi'), '_'), console[_0x2ee787(0x92)](address2), questionset = fampit[address2], totalq = Object['keys'](questionset)[_0x2ee787(0x93)], currentq = 0x1, document[_0x2ee787(0x96)](_0x2ee787(0xa4))[_0x2ee787(0x83)] = _0x2ee787(0xa5) + currentq + _0x2ee787(0xa1) + totalq, document[_0x2ee787(0x96)](_0x2ee787(0x99))['innerHTML'] = questionset[currentq - 0x1]['question'];
+for (let i = 0x0; i < Object[_0x2ee787(0xa7)](questionset[currentq - 0x1]['answerChoiceList'])['length']; i++) {
+  j = i + 0x1,
+    thischoice = document[_0x2ee787(0xb0)]('#choices>li:nth-child(' + j + ')'),
+    thischoice[_0x2ee787(0x83)] = questionset[currentq - 0x1][_0x2ee787(0x95)][i]['choice'],
+    $(_0x2ee787(0xab) + j + ')')['show']();
 }
-address = _0x1a875c(0xe6);
-var refs = [_0x1a875c(0x98), '<a\x20target=\x22_blank\x22\x20href=\x22https://link.springer.com/book/10.1007/978-3-030-18282-3\x22><i>Pediatric\x20Allergy</i></a>.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1007%2F978-3-030-18282-3\x22>10.1007/978-3-030-18282-3</a>.<br><br>', '<i>Clinical\x20&amp;\x20Experimental\x20Allergy</i>.\x20<b>48</b>\x20(6).\x202018-06.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1111%2Fcea.2018.48.issue-6\x22>10.1111/cea.2018.48.issue-6</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0954-7894\x22>0954-7894</a><a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1111/cea.2018.48.issue-6\x22>http://dx.doi.org/10.1111/cea.2018.48.issue-6</a><br><br>', _0x1a875c(0xec), _0x1a875c(0xc4), _0x1a875c(0xdf), 'Netting,\x20Merryn\x20J.;\x20Campbell,\x20Dianne\x20E.;\x20Koplin,\x20Jennifer\x20J.;\x20Beck,\x20Kathy\x20M.;\x20McWilliam,\x20Vicki;\x20Dharmage,\x20Shyamali\x20C.;\x20Tang,\x20Mimi\x20L.\x20K.;\x20Ponsonby,\x20Anne-Louise;\x20Prescott,\x20Susan\x20L.;\x20Vale,\x20Sandra;\x20Loh,\x20Richard\x20K.\x20S.\x20(2017-11).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/28499774/\x22>\x22An\x20Australian\x20Consensus\x20on\x20Infant\x20Feeding\x20Guidelines\x20to\x20Prevent\x20Food\x20Allergy:\x20Outcomes\x20From\x20the\x20Australian\x20Infant\x20Feeding\x20Summit\x22</a>.\x20<i>The\x20Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology.\x20In\x20Practice</i>.\x20<b>5</b>\x20(6):\x201617–1624.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaip.2017.03.013\x22>10.1016/j.jaip.2017.03.013</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/2213-2201\x22>2213-2201</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/28499774\x22>28499774</a>.\x20<br><br>', _0x1a875c(0x97), _0x1a875c(0xa6), _0x1a875c(0xfc), 'Blaiss,\x20Michael\x20S.;\x20Steven,\x20Gary\x20C.;\x20Bender,\x20Bruce;\x20Bukstein,\x20Don\x20A.;\x20Meltzer,\x20Eli\x20O.;\x20Winders,\x20Tonya\x20(2019-05).\x20<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.anai.2018.08.019\x22>\x22Shared\x20decision\x20making\x20for\x20the\x20allergist\x22</a>.\x20<i>Annals\x20of\x20Allergy,\x20Asthma\x20&amp;Immunology</i>.\x20<b>122</b>\x20(5):\x20463–470.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.anai.2018.08.019\x22>10.1016/j.anai.2018.08.019</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1081-1206\x22>1081-1206</a>.<br><br>', _0x1a875c(0xda), _0x1a875c(0xd7), _0x1a875c(0x128), 'Brough,\x20Helen\x20A.;\x20Santos,\x20Alexandra\x20F.;\x20Makinson,\x20Kerry;\x20Penagos,\x20Martin;\x20Stephens,\x20Alick\x20C.;\x20Douiri,\x20Abdel;\x20Fox,\x20Adam\x20T.;\x20Du\x20Toit,\x20George;\x20Turcanu,\x20Victor;\x20Lack,\x20Gideon\x20(2013-09).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.jaci.2013.02.034\x22>\x22Peanut\x20protein\x20in\x20household\x20dust\x20is\x20related\x20to\x20household\x20peanut\x20consumption\x20and\x20is\x20biologically\x20active\x22</a>.&nbsp;<i>Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.&nbsp;<b>132</b>&nbsp;(3):\x20630–638.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2013.02.034\x22>10.1016/j.jaci.2013.02.034</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0091-6749\x22>0091-6749</a>.<br><br>', 'Perry,\x20Tamara\x20T;\x20Conover-Walker,\x20Mary\x20Kay;\x20Pomés,\x20Anna;\x20Chapman,\x20Martin\x20D;\x20Wood,\x20Robert\x20A\x20(2004-05).&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22http://dx.doi.org/10.1016/j.jaci.2004.02.035\x22>\x22Distribution\x20of\x20peanut\x20allergen\x20in\x20the\x20environment\x22</a>.&nbsp;<i>Journal\x20of\x20Allergy\x20and\x20Clinical\x20Immunology</i>.&nbsp;<b>113</b>&nbsp;(5):\x20973–976.&nbsp;doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1016%2Fj.jaci.2004.02.035\x22>10.1016/j.jaci.2004.02.035</a>.&nbsp;ISSN&nbsp;<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/0091-6749\x22>0091-6749</a>.<br><br>', _0x1a875c(0x11b), _0x1a875c(0xef), _0x1a875c(0x11b), _0x1a875c(0xf4), _0x1a875c(0xbb), 'Greer,\x20Frank\x20R.;\x20Sicherer,\x20Scott\x20H.;\x20Burks,\x20A.\x20Wesley;\x20COMMITTEE\x20ON\x20NUTRITION;\x20SECTION\x20ON\x20ALLERGY\x20AND\x20IMMUNOLOGY\x20(2019-04).\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/30886111/\x22>\x22The\x20Effects\x20of\x20Early\x20Nutritional\x20Interventions\x20on\x20the\x20Development\x20of\x20Atopic\x20Disease\x20in\x20Infants\x20and\x20Children:\x20The\x20Role\x20of\x20Maternal\x20Dietary\x20Restriction,\x20Breastfeeding,\x20Hydrolyzed\x20Formulas,\x20and\x20Timing\x20of\x20Introduction\x20of\x20Allergenic\x20Complementary\x20Foods\x22</a>.\x20<i>Pediatrics</i>.\x20<b>143</b>(4):\x20e20190281.\x20doi:<a\x20target=\x22_blank\x22\x20href=\x22https://doi.org/10.1542%2Fpeds.2019-0281\x22>10.1542/peds.2019-0281</a>.\x20ISSN\x20<a\x20target=\x22_blank\x22\x20href=\x22https://www.worldcat.org/issn/1098-4275\x22>1098-4275</a>.\x20PMID\x20<a\x20target=\x22_blank\x22\x20href=\x22https://pubmed.ncbi.nlm.nih.gov/30886111\x22>30886111</a>.\x20<br><br>', _0x1a875c(0x128), _0x1a875c(0xa2), _0x1a875c(0x128), '<br><br>', _0x1a875c(0x128), _0x1a875c(0x128), _0x1a875c(0x128), _0x1a875c(0x128), _0x1a875c(0x128), _0x1a875c(0x128)], fampit = {
-    'earlyfood_leap_guidelines': [{
-            'question': _0x1a875c(0xcf),
-            'answerChoiceList': [{
-                    'choice': 'Vitamin\x20B12',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x100),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x9e),
-                    'extra': _0x1a875c(0x104),
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': _0x1a875c(0x7e),
-                    'extra': _0x1a875c(0xab),
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0x77),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x88),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x12b),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x11d),
-                    'extra': '<b>INTRODUCE\x20ZINC-RICH\x20FOODS\x20TO\x20INFANTS\x20STARTING\x20AT\x20ABOUT\x206\x20MONTHS\x20OLD&nbsp;</b><div><b><br></b><div>Zinc-rich\x20complementary\x20foods\x20(e.g.,\x20meats,\x20beans,\x20zincfortified\x20infant\x20cereals)\x20are\x20important\x20from\x20age\x206\x20months\x20onwards\x20to\x20support\x20adequate\x20zinc\x20status,\x20which\x20supports\x20growth\x20and\x20immune\x20function.\x20Although\x20the\x20zinc\x20content\x20of\x20human\x20milk\x20is\x20initially\x20high\x20and\x20efficiently\x20absorbed,\x20the\x20concentration\x20declines\x20over\x20the\x20first\x206\x20months\x20of\x20lactation\x20and\x20is\x20not\x20affected\x20by\x20maternal\x20zinc\x20intake.\x20During\x20the\x20second\x20half\x20of\x20infancy,\x20approximately\x20half\x20(54%)\x20of\x20U.S.\x20infants\x20fed\x20human\x20milk\x20have\x20inadequate\x20zinc\x20intake.\x20Prioritizing\x20zinc-rich\x20foods\x20starting\x20at\x206\x20months\x20of\x20age\x20to\x20complement\x20human\x20milk\x20feedings\x20will\x20help\x20infants\x20meet\x20their\x20requirement\x20for\x20zinc.</div></div>',
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': '1\x20year',
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0x9d),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x80),
-                    'extra': _0x1a875c(0xb3),
-                    'References': [refs[0x1]]
-                }, {
-                    'choice': _0x1a875c(0xc1),
-                    'extra': _0x1a875c(0xc5),
-                    'References': ''
-                }, {
-                    'choice': 'Perform\x20a\x20trial\x20of\x20egg\x20and/or\x20peanut\x20in\x20the\x20office',
-                    'extra': _0x1a875c(0xe2),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x129),
-                    'extra': _0x1a875c(0xe2),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xbf),
-                    'extra': _0x1a875c(0xfe),
-                    'References': ''
-                }
-            ],
-            'answer': 0x1
-        }, {
-            'question': 'What\x20is\x20the\x20age\x20that\x20complementary\x20food\x20sources\x20of\x20iron\x20should\x20be\x20introduced?',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xcd),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '1\x20year',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x11d),
-                    'extra': 'Iron-rich\x20foods\x20(e.g.,\x20meats\x20and\x20seafood\x20rich\x20in\x20heme\x20iron\x20and\x20iron-fortified\x20infant\x20cereals)\x20are\x20important\x20components\x20of\x20the\x20infant’s\x20diet\x20from\x20age\x206\x20through\x2011\x20months\x20to\x20maintain\x20adequate\x20iron\x20status,\x20which\x20supports\x20neurologic\x20development\x20and\x20immune\x20function.\x20Infants\x20are\x20typically\x20born\x20with\x20body\x20stores\x20of\x20iron\x20adequate\x20for\x20about\x20the\x20first\x206\x20months\x20of\x20life,\x20depending\x20on\x20gestational\x20age,\x20maternal\x20iron\x20status,\x20and\x20timing\x20of\x20umbilical\x20cord\x20clamping.\x20By\x20age\x206\x20months,\x20however,\x20infants\x20require\x20an\x20external\x20source\x20of\x20iron\x20apart\x20from\x20human\x20milk.\x20Caregivers\x20of\x20infants\x20exclusively\x20fed\x20human\x20milk\x20should\x20talk\x20with\x20their\x20pediatric\x20care\x20provider\x20about\x20whether\x20there\x20may\x20be\x20a\x20need\x20for\x20infants\x20supplementation\x20with\x20iron\x20before\x20age\x206\x20months.\x20A\x20complementary\x20food\x20source\x20of\x20iron\x20beginning\x20at\x20about\x206\x20months\x20is\x20particularly\x20important\x20for\x20infants\x20fed\x20human\x20milk\x20because\x20the\x20iron\x20content\x20of\x20human\x20milk\x20is\x20low\x20and\x20maternal\x20iron\x20intake\x20during\x20lactation\x20does\x20not\x20increase\x20its\x20content.\x20In\x20the\x20United\x20States,\x20an\x20estimated\x2077\x20percent\x20of\x20infants\x20fed\x20human\x20milk\x20have\x20inadequate\x20iron\x20intake\x20during\x20the\x20second\x20half\x20of\x20infancy,\x20highlighting\x20the\x20importance\x20of\x20introducing\x20iron-rich\x20foods\x20starting\x20at\x20age\x206\x20months.\x20Infants\x20receiving\x20most\x20of\x20their\x20milk\x20feeds\x20as\x20ironfortified\x20infant\x20formula\x20are\x20likely\x20to\x20need\x20less\x20iron\x20from\x20complementary\x20foods\x20beginning\x20at\x206\x20months\x20of\x20age.\x20After\x20age\x2012\x20months,\x20children\x20have\x20a\x20lower\x20iron\x20requirement,\x20but\x20good\x20food\x20sources\x20of\x20iron\x20are\x20still\x20needed\x20to\x20maintain\x20adequate\x20iron\x20status\x20and\x20prevent\x20deficiency',
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': _0x1a875c(0xa0),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0xf1),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x125),
-                    'extra': _0x1a875c(0xf0),
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': _0x1a875c(0x82),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Processed\x20foods,\x20seafood,\x20and\x20nuts',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xbd),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xff),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x1
-        }, {
-            'question': _0x1a875c(0x9f),
-            'answerChoiceList': [{
-                    'choice': 'Yogurt',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Rice',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Malt',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xc3),
-                    'extra': _0x1a875c(0xfa),
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': _0x1a875c(0x111),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x4
-        }, {
-            'question': _0x1a875c(0xf8),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xd9),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x12d),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x119),
-                    'extra': _0x1a875c(0x9b),
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': 'Vitamin\x20D',
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': 'Which\x20of\x20the\x20following\x20beverages\x20should\x20not\x20be\x20given\x20before\x20age\x2012\x20months?',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xe8),
-                    'extra': _0x1a875c(0xb7),
-                    'References': ''
-                }, {
-                    'choice': 'Cow\x20milk',
-                    'extra': _0x1a875c(0xe0),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xc2),
-                    'extra': _0x1a875c(0xe0),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xaf),
-                    'extra': _0x1a875c(0x113),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xdd),
-                    'extra': 'Infants\x20should\x20not\x20consume\x20cow\x20milk\x20or\x20fortified\x20soy\x20beverages\x20before\x20age\x2012\x20months\x20to\x20replace\x20human\x20milk\x20or\x20infant\x20formula.\x20Cow\x20milk\x20does\x20not\x20have\x20the\x20correct\x20amount\x20of\x20nutrients\x20for\x20infants,\x20and\x20its\x20higher\x20protein\x20and\x20mineral\x20content\x20are\x20hard\x20for\x20an\x20infant’s\x20kidneys\x20and\x20digestive\x20system\x20to\x20process.\x20Plain\x20cow\x20milk\x20(whole\x20milk)\x20or\x20fortified\x20unsweetened\x20soy\x20beverage\x20can\x20be\x20offered\x20beginning\x20around\x2012\x20months\x20of\x20age\x20to\x20help\x20meet\x20calcium,\x20potassium,\x20vitamin\x20D,\x20and\x20protein\x20needs.\x20Flavored\x20milks\x20for\x20children\x20age\x2012\x20through\x2023\x20months\x20should\x20be\x20avoided\x20because\x20they\x20contain\x20added\x20sugars.\x20<br>\x20Plant-based\x20milk\x20alternatives,\x20which\x20are\x20sometimes\x20referred\x20to\x20as\x20milk\x20alternatives,\x20include\x20beverages\x20made\x20from\x20plants,\x20such\x20as\x20soy,\x20oat,\x20rice,\x20coconut,\x20and\x20almond.\x20These\x20beverages\x20should\x20not\x20be\x20used\x20in\x20the\x20first\x20year\x20of\x20life\x20to\x20replace\x20human\x20milk\x20or\x20infant\x20formula.\x20They\x20may\x20come\x20in\x20different\x20flavors\x20and\x20some\x20forms\x20have\x20added\x20sugars.\x20Unsweetened\x20versions\x20of\x20these\x20beverages\x20may\x20be\x20accommodated\x20in\x20small\x20amounts\x20in\x20the\x20diet\x20during\x20the\x20second\x20year\x20of\x20life,\x20but\x20most\x20have\x20significantly\x20less\x20protein\x20than\x20cow\x20milk\x20and\x20are\x20not\x20always\x20fortified\x20with\x20calcium\x20and\x20vitamin\x20D.\x20Among\x20plant-based\x20milk\x20alternatives,\x20only\x20fortified\x20soy\x20beverage\x20is\x20currently\x20considered\x20a\x20dairy\x20equivalent.\x20Thus,\x20consuming\x20other\x20plant-based\x20beverages\x20does\x20not\x20contribute\x20to\x20meeting\x20dairy\x20recommendations.\x20<br>\x20Before\x20age\x2012\x20months,\x20100%\x20fruit\x20or\x20vegetable\x20juices\x20should\x20not\x20be\x20given\x20to\x20infants.\x20In\x20the\x20second\x20year\x20of\x20life,\x20fruit\x20juice\x20is\x20not\x20necessary,\x20and\x20most\x20fruit\x20intake\x20should\x20come\x20from\x20eating\x20whole\x20fruit.\x20If\x20100%\x20fruit\x20juice\x20is\x20provided,\x20up\x20to\x204\x20ounces\x20per\x20day\x20can\x20fit\x20in\x20a\x20healthy\x20dietary\x20pattern.\x20Juices\x20that\x20contain\x20added\x20sugars\x20should\x20be\x20avoided.',
-                    'References': [refs[0x17]]
-                }
-            ],
-            'answer': 0x5
-        }, {
-            'question': _0x1a875c(0x11e),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x11d),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x84),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xcd),
-                    'extra': _0x1a875c(0x108),
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': _0x1a875c(0xfd),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': 'Why\x20are\x20low-\x20and\x20no-calorie\x20sweeteners,\x20which\x20can\x20also\x20be\x20called\x20high-intensity\x20sweeteners,\x20not\x20recommended\x20for\x20children\x20younger\x20than\x20age\x202?',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x90),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xe3),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xcc),
-                    'extra': _0x1a875c(0x109),
-                    'References': [refs[0x17]]
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': 'Birth\x20Through\x20Age\x205\x20Months,\x20A\x20child\x20may\x20be\x20full\x20if\x20he\x20or\x20she:',
-            'answerChoiceList': [{
-                    'choice': 'Puts\x20hands\x20to\x20mouth.',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xe5),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Puckers,\x20smacks,\x20or\x20licks\x20lips.',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Relaxes\x20hands.',
-                    'extra': '<table><tbody><tr><td\x20colspan=\x223\x22><div><strong>Signs\x20a\x20Child\x20is\x20Hungry\x20or\x20Full</strong></div></td></tr><tr><td></td><td><div>A\x20child\x20may\x20be\x20<b>hungry\x20</b>if\x20he\x20or\x20she:&nbsp;</div></td><td><div>A\x20child\x20may\x20be\x20<b>full\x20</b>if\x20he\x20or\x20she</div></td></tr><tr><td>Birth\x20Through\x20Age\x205\x20Months<br></td><td><div><div><br></div><ul><li>Puts\x20hands\x20to\x20mouth.&nbsp;</li><li><div>&nbsp;Turns\x20head\x20toward\x20breast\x20or\x20bottle.&nbsp;</div></li><li><div>Puckers,\x20smacks,\x20or\x20licks\x20lips.&nbsp;</div></li><li>Has\x20clenched\x20hands<br></li></ul></div></td><td><ul><li>Closes\x20mouth.&nbsp;</li><li>Turns\x20head\x20away\x20from\x20breast\x20or\x20bottle.&nbsp;</li><li>Relaxes\x20hands.<br></li></ul></td></tr><tr><td>Age\x206\x20Through\x2023\x20Month<br></td><td><ul><li>Reaches\x20for\x20or\x20points\x20to\x20food.&nbsp;</li><li>Opens\x20his\x20or\x20her\x20mouth\x20when\x20offered\x20a\x20spoon\x20or\x20food.&nbsp;</li><li>Gets\x20excited\x20when\x20he\x20or\x20she\x20sees\x20food.&nbsp;</li><li>Uses\x20hand\x20motions\x20or\x20makes\x20sounds\x20to\x20let\x20you\x20know\x20he\x20or\x20she\x20is\x20still\x20hungry<br></li></ul></td><td><ul><li>Pushes\x20food\x20away.&nbsp;</li><li>Closes\x20his\x20or\x20her\x20mouth\x20when\x20food\x20is\x20offered.&nbsp;</li><li>Turns\x20his\x20or\x20her\x20head\x20away\x20from\x20food.&nbsp;</li><li>Uses\x20hand\x20motions\x20or\x20makes\x20sounds\x20to\x20let\x20you\x20know\x20he\x20or\x20she\x20is\x20still\x20full.<br></li></ul></td></tr></tbody></table>',
-                    'References': [refs[0x17]]
-                }, {
-                    'choice': _0x1a875c(0x12a),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x4
-        }, {
-            'question': _0x1a875c(0x124),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x79),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Turns\x20head\x20toward\x20breast\x20or\x20bottle.',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x87),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xf2),
-                    'extra': _0x1a875c(0x7b),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x12a),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x4
-        }, {
-            'question': '\x20Which\x20of\x20the\x20following\x20dietetic\x20measures\x20reduces\x20the\x20risk\x20for\x20development\x20of\x20food\x20allergy\x20and\x20atopic\x20eczema\x20in\x20“high-risk”\x20infants?',
-            'answerChoiceList': [{
-                    'choice': 'Exclusive\x20breastfeeding\x20during\x20at\x20least\x206\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Avoidance\x20of\x20cow’s\x20milk\x20products\x20during\x20at\x20least\x20the\x20first\x20year\x20of\x20life',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xb4),
-                    'extra': _0x1a875c(0xb6),
-                    'References': [refs[0x0] + refs[0x1]]
-                }, {
-                    'choice': 'Exclusive\x20breastfeeding\x20and/or\x20a\x20documented\x20hypoallergenic\x20formula\x20during\x20the\x20first\x202\x20months\x20of\x20life',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x106),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': 'A\x202-year-old\x20girl\x20was\x20brought\x20up\x20to\x20the\x20emergency\x20room\x20by\x20her\x20parents,\x20due\x20to\x20protracted\x20vomiting,\x20breathlessness,\x20and\x20emergence\x20of\x20severe\x20swelling\x20on\x20her\x20lips\x20and\x20face,\x20minutes\x20after\x20ingestion\x20of\x20a\x20chocolate\x20cream\x20in\x20a\x20party.\x20Her\x20parents\x20had\x20known\x20about\x20their\x20daughter\x20probable\x20allergy\x20to\x20nuts,\x20as\x20she\x20frequently\x20experienced\x20itching,\x20urticaria\x20and\x20mild\x20angioedema\x20after\x20having\x20tree\x20nut,\x20soy\x20beans\x20or\x20processed\x20nut-containing\x20mixed\x20bars.\x20The\x20chocolate\x20cream\x20of\x20suspicion\x20contained\x20peanut\x20cream,\x20and\x20almond\x20particles,\x20to\x20which\x20they\x20were\x20not\x20sure\x20if\x20she\x20had\x20ever\x20been\x20exposed.\x20Anaphylaxis\x20management\x20protocol\x20was\x20started\x20for\x20her\x20with\x20epinephrine\x20and\x20methylprednisolone.<br><br>Which\x20of\x20the\x20following\x20statements\x20is\x20true\x20about\x20the\x20diagnosis\x20of\x20peanut\x20allergy?',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x12c),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x116),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xe4),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x101),
-                    'extra': _0x1a875c(0x10d),
-                    'References': [refs[0x2] + refs[0x3] + refs[0x4]]
-                }, {
-                    'choice': _0x1a875c(0xb5),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x4
-        }, {
-            'question': '\x20All\x20the\x20following\x20statements\x20are\x20correct\x20about\x20peanut\x20allergy,\x20except',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xa5),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Severe\x20multisystem\x20reactions\x20are\x20uncommon\x20with\x20this\x20type\x20of\x20allergy',
-                    'extra': _0x1a875c(0xa9),
-                    'References': [refs[0x1] + refs[0x5]]
-                }, {
-                    'choice': _0x1a875c(0x11a),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x112),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x110),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': _0x1a875c(0xd5),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xa4),
-                    'extra': _0x1a875c(0xac),
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x117),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xea),
-                    'extra': _0x1a875c(0xa1),
-                    'References': [refs[0x0]]
-                }, {
-                    'choice': _0x1a875c(0x10b),
-                    'extra': 'This\x20is\x20done\x20for\x20infants\x20with\x20severe\x20eczema,\x20egg\x20allergy,\x20or\x20both',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0x115),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xb9),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'No',
-                    'extra': _0x1a875c(0xb1),
-                    'References': [refs[0x15] + refs[0x0]]
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': '“Peanut\x20or\x20egg\x20should\x20be\x20the\x20first\x20food\x20offered\x20to\x20an\x20infant\x20starting\x20solid\x20foods“',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x118),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x10c),
-                    'extra': _0x1a875c(0xeb),
-                    'References': [refs[0x0] + refs[0x6] + refs[0x8] + refs[0x9]]
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': 'When\x20should\x20you\x20start\x20talking\x20about\x20peanut\x20introduction\x20guidelines\x20with\x20families?',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x102),
-                    'extra': _0x1a875c(0xba),
-                    'References': [refs[0x0]]
-                }, {
-                    'choice': '4\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '6\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '1-year',
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x1
-        }, {
-            'question': _0x1a875c(0x96),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x127),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Fish',
-                    'extra': 'Diet\x20diversity\x20is\x20defined\x20as\x20the\x20number\x20of\x20different\x20foods\x20or\x20food\x20groups\x20consumed\x20over\x20a\x20given\x20reference\x20period.There\x20are\x20a\x20total\x20of\x2015\x20publications\x20referring\x20to\x207\x20different\x20studies\x20that\x20have\x20investigated\x20the\x20effect\x20of\x20diet\x20diversity\x20on\x20allergy\x20outcomes(see\x20Table\x20E1\x20in\x20this\x20article’s\x20Online\x20Repository\x20at\x20www.jaciinpractice.org),\x20but\x20just\x203\x20investigated\x20food\x20allergy\x20as\x20an\x20outcome.\x20<br>\x20In\x20a\x20study\x20from\x205\x20European\x20countries(Austria,\x20Finland,\x20France,\x20Germany,\x20and\x20Switzerland),\x20Roduit\x20et\x20al\x20observed\x20that\x20decreased\x20diet\x20diversity\x20in\x20the\x20first\x20year\x20of\x20life\x20was\x20associated\x20with\x20increased\x20risk\x20of\x20a\x20reported\x20doctor-\x20diagnosed\x20food\x20allergy\x20up\x20to\x20age\x206\x20years(6\x20foods\x20vs\x204\x20-\x205\x20foods:\x201.85;\x2095%\x20CI,\x201.02-3.35;\x206\x20vs\x200-3\x20items:\x204.43;\x2095%\x20CI,\x201.62-12.1),\x20using\x20a\x20model\x20that\x20adjusted\x20for\x20potential\x20confounders,\x20but\x20not\x20a\x20model\x20that\x20adjusted\x20for\x20both\x20confounders\x20and\x20reverse\x20causality.In\x20applying\x20this\x20latter\x20model,\x20the\x20results\x20were\x20no\x20longer\x20statistically\x20significant.\x20<b>\x20For\x20each\x20additional\x20food\x20in\x20the\x20diet,\x20the\x20risk\x20of\x20reported\x20food\x20allergy\x20decreased\x20significantly(0.70;\x200.57,\x200.86;\x20P\x20&\x20lt;\x20.05),\x20but\x20lost\x20significance\x20when\x20adjusted\x20for\x20a\x20diagnosis\x20occurring\x20by\x20age\x201\x20year</b>.There\x20was\x20a\x20stronger\x20protective\x20association\x20observed\x20for\x20diet\x20&\x20nbsp;\x20diversity\x20when\x20combining\x20doctor\x20-\x20diagnosed\x20food\x20allergy\x20with\x20positive\x20food\x20sensitizations.\x20<b>\x20Introduction\x20of\x20fish\x20in\x20the\x20first\x20year\x20of\x20life\x20showed\x20a\x20reduction\x20in\x20the\x20prevalence\x20of\x20food\x20allergy\x20in\x20the\x20first\x206\x20years\x20of\x20life</b>.\x20<br>\x20Roduit\x20et\x20al\x20also\x20showed\x20that\x20decreased\x20diet\x20diversity\x20during\x20the\x20first\x20year\x20of\x20life\x20was\x20associated\x20with\x20an\x20increased\x20risk\x20of\x20sensitization\x20to\x20food\x20allergens(specific\x20IgE\x20tests\x20to\x20egg,\x20CM,\x20peanut,\x20hazelnut,\x20carrot,\x20and\x20wheat)\x20at\x20age\x204.5\x20or\x206\x20years(6\x20foods\x20vs\x204\x20-\x205\x20foods:\x201.52;\x2095\x20%\x20CI,\x200.83\x20-\x202.76;\x206\x20vs\x200\x20-\x203\x20items:\x205.47;\x2095\x20%\x20CI,\x201.91\x20-\x2015.67),\x20again\x20using\x20a\x20model\x20that\x20adjusted\x20for\x20potential\x20confounders,\x20but\x20not\x20a\x20model\x20that\x20adjusted\x20for\x20both\x20confounders\x20and\x20reverse\x20causality.In\x20this\x20latter\x20model,\x20the\x20results\x20remained\x20statistically\x20significant\x20for\x206\x20foods\x20versus\x200\x20to\x203\x20foods.Nwaru\x20et\x20al90\x20reported\x20that\x20the\x20introduction\x20of\x201\x20to\x202\x20food\x20items\x20at\x204\x20months\x20and\x204\x20or\x20fewer\x20food\x20items\x20at\x206\x20months\x20was\x20associated\x20with\x20sensitization\x20to\x20egg,\x20CM,\x20fish,\x20and\x20wheat.However,\x20this\x20study\x20also\x20may\x20be\x20confounded\x20by\x20reverse\x20causality.In\x20the\x2015\x20-\x20year\x20follow\x20-\x20up\x20of\x20the\x20GINI\x20study,\x20Markevych\x20et\x20al91\x20noted\x20that\x20higher\x20food\x20diversity\x20during\x20the\x20first\x20year\x20of\x20life\x20was\x20not\x20associated\x20with\x20food\x20sensitization(using\x20the\x20serologic\x20FX5\x20test,\x20which\x20includes\x20sIgE\x20to\x20CM,\x20egg,\x20peanut,\x20soy,\x20cod,\x20wheat).\x20<br>\x20Grimshaw\x20et\x20al\x20measured\x20dietary\x20patterns(rather\x20than\x20diversity)\x20based\x20on\x20prospective\x20food\x20diary\x20data\x20to\x20investigate\x20whether\x20infant\x20feeding\x20patterns(rather\x20than\x20any\x20specific\x20food\x20/\x20food\x20component)\x20impacted\x20food\x20allergy\x20development.In\x20this\x20small,\x20nested\x20case\x20-controlled\x20study\x20of\x20food\x20-\x20allergic(n\x20¼\x2041)\x20and\x20nonefood\x20-\x20allergic(n\x20¼\x2082)\x20children\x20from\x20a\x20UK\x20birth\x20cohort,\x20no\x20such\x20association\x20was\x20noted\x20between\x20the\x20dietary\x20pattern\x20and\x20development\x20of\x20food\x20allergy,\x20though\x20the\x20ongoing\x20dietary\x20pattern(after\x20solid\x20food\x20introduction\x20up\x20to\x20age\x201\x20year)\x20between\x20the\x202\x20groups\x20was\x20significantly\x20different.This\x20ongoing\x20dietary\x20pattern\x20compared\x20healthy\x20versus\x20unhealthy\x20weaning\x20foods,\x20as\x20defined\x20by\x20infant\x20feeding\x20guidelines,\x20and\x20found\x20the\x20“healthy\x20infant\x20diet”\x20(identified\x20as\x20predominantly\x20home\x20-\x20cooked\x20diet\x20during\x20later\x20infancy\x20with\x20high\x20values\x20for\x20fruit,\x20vegetable,\x20fish,\x20and\x20poultry\x20consumption\x20and\x20low\x20values\x20for\x20highly\x20processed\x20adult\x20foods,\x20eg,\x20ready\x20meals,\x20cook\x20-in\x20-sauces,\x20potato\x20-\x20products,\x20and\x20bacon\x20and\x20the\x20use\x20of\x20commercial\x20baby\x20foods\x20more\x20than\x20once\x20a\x20day)\x20was\x20associated\x20with\x20less\x20food\x20allergy(P\x20¼\x20.002).Another\x20report\x20from\x20the\x20same\x20cohort\x20showed\x20that\x20a\x20lower\x20“healthy\x20infant\x20pattern”\x20score\x20was\x20associated\x20with\x20increased\x20risk\x20of\x20all\x20food\x20allergy,\x20including\x20both\x20IgE\x20-\x20and\x20noneIgE\x20-\x20mediated\x20food\x20allergy\x20at\x20the\x20age\x20of\x202\x20years.<br>\x20Lastly,\x20a\x20retrospective\x20analysis\x20of\x20infant\x20dietary\x20patterns\x20on\x20the\x20Isle\x20of\x20Wight\x20in\x20the\x20food\x20allergy\x20intolerance\x20research\x20Birth\x20Cohort\x20noted\x20a\x20significant\x20protective\x20association\x20between\x20dietary\x20diversity\x20at\x20both\x206\x20and\x209\x20months\x20of\x20life\x20and\x20lower\x20odds\x20of\x20developing\x20food\x20allergy\x20over\x20the\x20first\x20decade\x20of\x20life.92\x20Data\x20from\x20this\x20study\x20indicated\x20that\x20for\x20each\x20additional\x20food\x20introduced\x20by\x206\x20months,\x20the\x20odds\x20of\x20developing\x20food\x20allergy\x20over\x20the\x20first\x2010\x20years\x20of\x20life\x20reduced\x20by\x2010.8\x20%,\x20even\x20after\x20correcting\x20for\x20significant\x20factors.For\x20each\x20additional\x20potentially\x20allergic\x20food\x20introduced\x20by\x2012\x20months,\x20there\x20was\x20a\x20significant\x20reduction\x20of\x2033.2\x20%\x20in\x20the\x20likelihood\x20of\x20food\x20allergy\x20over\x20the\x20first\x2010\x20years\x20of\x20life.Food\x20allergen\x20diversity\x20did\x20not\x20negatively\x20affect\x20overall\x20food\x20diversity,\x20and\x20there\x20was\x20no\x20association\x20between\x20eczema\x20and\x20age\x20of\x20introduction\x20of\x20solids.\x20<br>\x20Diet\x20diversity\x20studies\x20to\x20date\x20have\x20inherent\x20limitations,\x20including\x20the\x20following:\x20(1)\x20diversity\x20is\x20perhaps\x20more\x20important\x20for\x20typically\x20allergenic\x20than\x20for\x20nonallergenic\x20foods,\x20but\x20these\x20studies\x20do\x20not\x20discriminate\x20the\x202\x20aspects;\x20(2)\x20the\x20amount\x20/\x20regularity\x20of\x20exposure\x20once\x20introduced\x20is\x20not\x20captured;\x20(3)\x20diversity\x20among\x20and\x20also\x20within\x20food\x20groups,\x20for\x20example,\x20how\x20many\x20fruits\x20and\x20vegetables,\x20is\x20not\x20described;\x20and(4)\x20diversity\x20versus\x20early\x20potential\x20allergen\x20introduction\x20is\x20not\x20differentiated.As\x20well,\x20there\x20may\x20be\x20cultural\x20differences\x20to\x20account\x20for\x20in\x20the\x20types\x20of\x20foods\x20that\x20may\x20comprise\x20a\x20diverse\x20diet\x20for\x20a\x20particular\x20infant.',
-                    'References': _0x1a875c(0x7c)
-                }, {
-                    'choice': _0x1a875c(0x133),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xf5),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }
-    ],
-    'earlyfood_current_research': [{
-            'question': _0x1a875c(0xbc),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xa0),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x84),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x11d),
-                    'extra': _0x1a875c(0xb8),
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0x130),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x9c),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xca),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': _0x1a875c(0xd6),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0xdb),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xa8),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xad),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': 'back\x20to\x203',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x12b),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x11d),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x122),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }
-    ],
-    'earlyfood_what_foods_introduce': [{
-            'question': _0x1a875c(0x92),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x7a),
-                    'extra': 'Exclusive\x20breastmilk\x20and/or\x20formula\x20feeding\x20is\x20recommended\x20till\x204-6\x20months\x20of\x20age',
-                    'References': ''
-                }, {
-                    'choice': '4-6\x20months',
-                    'extra': _0x1a875c(0x83),
-                    'References': [refs[0xa] + refs[0xb] + refs[0xc]]
-                }, {
-                    'choice': '6-12\x20months',
-                    'extra': 'There\x20is\x20no\x20evidence\x20that\x20delaying\x20introduction\x20of\x20allergenic\x20foods\x20beyond\x206\x20months\x20prevents\x20food\x20allergy.\x20',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': _0x1a875c(0x75),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x11f),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x7f),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Liquid\x20cow’s\x20milk',
-                    'extra': _0x1a875c(0xe1),
-                    'References': [refs[0xa] + refs[0xb] + refs[0xc]]
-                }, {
-                    'choice': 'Carrots',
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0x120),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x131),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x133),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x134),
-                    'extra': _0x1a875c(0x12e),
-                    'References': [refs[0xa] + refs[0xb] + refs[0xc]]
-                }, {
-                    'choice': _0x1a875c(0x123),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }
-    ],
-    'earlyfood_leap_guidelines\x20(copy\x202)': [{
-            'question': 'It\x20is\x20recommended\x20to\x20refer\x20____\x20infants\x20to\x20a\x20pediatric\x20allergist\x20for\x20evaluation\x20and\x20possible\x20skin\x20testing',
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x11c),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': 'Moderate\x20Risk',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x12f),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x3
-        }, {
-            'question': _0x1a875c(0xae),
-            'answerChoiceList': [{
-                    'choice': '4\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '6\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x122),
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': _0x1a875c(0xcb),
-            'answerChoiceList': [{
-                    'choice': _0x1a875c(0x12b),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0xf7),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': _0x1a875c(0x122),
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '2-year',
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }, {
-            'question': 'back\x20to\x203',
-            'answerChoiceList': [{
-                    'choice': '4\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '6\x20months',
-                    'extra': '',
-                    'References': ''
-                }, {
-                    'choice': '1-year',
-                    'extra': '',
-                    'References': ''
-                }
-            ],
-            'answer': 0x2
-        }
-    ]
-};
-address = address[_0x1a875c(0xc7)](0x14), address2 = address[_0x1a875c(0x8d)](RegExp(_0x1a875c(0x105), 'gi'), _0x1a875c(0x9a)), address2 = address2[_0x1a875c(0x8d)](RegExp('-', 'gi'), '_'), address = address['replace'](RegExp(_0x1a875c(0x107), 'gi'), '$1'), address = address[_0x1a875c(0x8d)](RegExp('-', 'gi'), '_'), console[_0x1a875c(0xf6)](address2), questionset = fampit[address2], totalq = Object[_0x1a875c(0xb2)](questionset)['length'], currentq = 0x1, document[_0x1a875c(0x99)]('qnumber')['innerHTML'] = _0x1a875c(0xa7) + currentq + _0x1a875c(0x126) + totalq, document[_0x1a875c(0x99)](_0x1a875c(0xd2))[_0x1a875c(0x74)] = questionset[currentq - 0x1][_0x1a875c(0xd2)];
-for (let i = 0x0; i < Object['keys'](questionset[currentq - 0x1][_0x1a875c(0x91)])[_0x1a875c(0x95)]; i++) {
-    j = i + 0x1,
-    thischoice = document[_0x1a875c(0x103)](_0x1a875c(0xe9) + j + ')'),
-    thischoice[_0x1a875c(0x74)] = questionset[currentq - 0x1][_0x1a875c(0x91)][i][_0x1a875c(0xc9)],
-    $(_0x1a875c(0xe9) + j + ')')['show']();
+function _0x4004(_0x413adc, _0x41132f) {
+  var _0x48de5d = _0x48de();
+  return _0x4004 = function (_0x400400, _0x520d1a) {
+    _0x400400 = _0x400400 - 0x7e;
+    var _0x1cf4b3 = _0x48de5d[_0x400400];
+    return _0x1cf4b3;
+  },
+    _0x4004(_0x413adc, _0x41132f);
 }
-var alertstr = 0x0, asd3w4 = 'Q3JlYXRlZCBieSBEciBBcmp1biBTaW5naCwgYXJqdW4yNzk2QGdtYWlsLmNvbQ==';
-function _0x10a2(_0x181fa8, _0x393603) {
-    var _0x565891 = _0x5658();
-    return _0x10a2 = function (_0x10a2fc, _0x5d97bc) {
-        _0x10a2fc = _0x10a2fc - 0x74;
-        var _0x449117 = _0x565891[_0x10a2fc];
-        return _0x449117;
-    },
-    _0x10a2(_0x181fa8, _0x393603);
-}
-$(_0x1a875c(0xed))[_0x1a875c(0x8c)](function () {
-    var _0x2ca27f = _0x1a875c;
-    choice_number = $(_0x2ca27f(0xed))['index'](this) + 0x1,
+var alertstr = 0x0, asd3w4 = _0x2ee787(0xac);
+$(_0x2ee787(0x9a))[_0x2ee787(0x8b)](function () {
+  var _0x2023e8 = _0x2ee787;
+  choice_number = $(_0x2023e8(0x9a))[_0x2023e8(0x98)](this) + 0x1,
     submit(this, choice_number);
 });
-function submit(_0x1abd77, _0xe4ba8a) {
-    var _0x14e0af = _0x1a875c;
-    _0xe4ba8a == questionset[currentq - 0x1][_0x14e0af(0xf3)] && (alertstr++, alertstr == 0x7 && alert(window['atob'](asd3w4)), $(_0x1abd77)[_0x14e0af(0xc8)](_0x14e0af(0xf9), _0x14e0af(0xe7)), $(_0x1abd77)[_0x14e0af(0x89)]('\x20✓'), references = '', questionset[currentq - 0x1][_0x14e0af(0x91)][_0xe4ba8a - 0x1][_0x14e0af(0xbe)][_0x14e0af(0x95)] && (references = _0x14e0af(0xd8) + questionset[currentq - 0x1][_0x14e0af(0x91)][_0xe4ba8a - 0x1][_0x14e0af(0xbe)]), document[_0x14e0af(0x99)](_0x14e0af(0x8f))['innerHTML'] = questionset[currentq - 0x1][_0x14e0af(0x91)][_0xe4ba8a - 0x1][_0x14e0af(0x8f)] + references, document['getElementById'](_0x14e0af(0x8f))[_0x14e0af(0x74)][_0x14e0af(0x95)] > 0x1 && $(_0x14e0af(0x8b))[_0x14e0af(0x85)](_0x14e0af(0xd1)), loganswers(), $(_0x14e0af(0xde))[_0x14e0af(0xd0)]()),
-    _0xe4ba8a != questionset[currentq - 0x1][_0x14e0af(0xf3)] && ($(_0x1abd77)[_0x14e0af(0x89)]('\x20✗'), $(_0x1abd77)['css'](_0x14e0af(0x8a), '#00000085'), $(_0x1abd77)[_0x14e0af(0xc6)](_0x14e0af(0x132)), document['getElementById'](_0x14e0af(0x8f))[_0x14e0af(0x74)] = _0x14e0af(0xd4) + questionset[currentq - 0x1][_0x14e0af(0x91)][_0xe4ba8a - 0x1]['extra'], document[_0x14e0af(0x99)](_0x14e0af(0x8f))[_0x14e0af(0x74)][_0x14e0af(0x95)] > 0x1 && $('#extra')[_0x14e0af(0x85)](_0x14e0af(0xd1)));
+function submit(_0x52299b, _0x34a5ba) {
+  var _0x41401a = _0x2ee787;
+  _0x34a5ba == questionset[currentq - 0x1][_0x41401a(0xb4)] && (alertstr++ , alertstr == 0x7 && alert(window[_0x41401a(0x8a)](asd3w4)), $(_0x52299b)[_0x41401a(0xae)](_0x41401a(0x8f), _0x41401a(0x7e)), $(_0x52299b)['append']('\x20✓'), references = '', questionset[currentq - 0x1][_0x41401a(0x95)][_0x34a5ba - 0x1]['References'][_0x41401a(0x93)] && (references = _0x41401a(0xb2) + questionset[currentq - 0x1]['answerChoiceList'][_0x34a5ba - 0x1][_0x41401a(0xa2)]), document[_0x41401a(0x96)](_0x41401a(0x7f))['innerHTML'] = questionset[currentq - 0x1]['answerChoiceList'][_0x34a5ba - 0x1][_0x41401a(0x7f)] + references, document[_0x41401a(0x96)](_0x41401a(0x7f))[_0x41401a(0x83)]['length'] > 0x1 && $(_0x41401a(0x97))[_0x41401a(0x85)](_0x41401a(0x82)), loganswers(), $('#next')[_0x41401a(0xa0)]()),
+    _0x34a5ba != questionset[currentq - 0x1][_0x41401a(0xb4)] && ($(_0x52299b)[_0x41401a(0x91)]('\x20✗'), $(_0x52299b)[_0x41401a(0xae)](_0x41401a(0x80), _0x41401a(0x8e)), $(_0x52299b)['addClass'](_0x41401a(0xa3)), document[_0x41401a(0x96)](_0x41401a(0x7f))[_0x41401a(0x83)] = _0x41401a(0xb5) + questionset[currentq - 0x1][_0x41401a(0x95)][_0x34a5ba - 0x1][_0x41401a(0x7f)], document['getElementById'](_0x41401a(0x7f))['innerHTML'][_0x41401a(0x93)] > 0x1 && $('#extra')[_0x41401a(0x85)](_0x41401a(0x82)));
 }
 function beforenextq() {
-    var _0x2a5fe2 = _0x1a875c;
-    $(_0x2a5fe2(0x114))[_0x2a5fe2(0xc8)]('color', _0x2a5fe2(0x7d)),
-    $(_0x2a5fe2(0x114))['css'](_0x2a5fe2(0xf9), ''),
-    $('#choices>li:nth-child(n)')[_0x2a5fe2(0x94)](_0x2a5fe2(0x132)),
-    $('#choices>li:nth-child(n)')[_0x2a5fe2(0x86)](),
-    $('#next')[_0x2a5fe2(0x86)](),
+  var _0x4c5fbf = _0x2ee787;
+  $(_0x4c5fbf(0x86))[_0x4c5fbf(0xae)]('color', 'black'),
+    $(_0x4c5fbf(0x86))[_0x4c5fbf(0xae)](_0x4c5fbf(0x8f), ''),
+    $(_0x4c5fbf(0x86))[_0x4c5fbf(0x9e)](_0x4c5fbf(0xa3)),
+    $(_0x4c5fbf(0x86))['hide'](),
+    $('#next')[_0x4c5fbf(0x90)](),
     nextq();
 }
 function nextq() {
-    var _0x14448b = _0x1a875c;
-    alertstr = 0x0;
-    if (currentq < totalq) {
-        currentq = currentq + 0x1,
-        document[_0x14448b(0x99)](_0x14448b(0x8f))[_0x14448b(0x74)] = '',
-        document[_0x14448b(0x99)](_0x14448b(0x93))['innerHTML'] = _0x14448b(0xa7) + currentq + _0x14448b(0x126) + totalq,
-        document[_0x14448b(0x99)](_0x14448b(0xd2))[_0x14448b(0x74)] = questionset[currentq - 0x1][_0x14448b(0xd2)];
-        for (let _0x450e82 = 0x0; _0x450e82 < Object[_0x14448b(0xb2)](questionset[currentq - 0x1][_0x14448b(0x91)])[_0x14448b(0x95)]; _0x450e82++) {
-            j = _0x450e82 + 0x1,
-            thischoice = document[_0x14448b(0x103)](_0x14448b(0xe9) + j + ')'),
-            thischoice[_0x14448b(0x74)] = questionset[currentq - 0x1][_0x14448b(0x91)][_0x450e82][_0x14448b(0xc9)],
-            $(_0x14448b(0xe9) + j + ')')[_0x14448b(0xd0)]();
-        }
-    } else
-        document[_0x14448b(0x99)]('extra')['innerHTML'] = '', document['getElementById'](_0x14448b(0x93))['innerHTML'] = _0x14448b(0xdc) + correctanswers + _0x14448b(0xfb) + totalq + '\x20questions\x20correct.', document[_0x14448b(0x99)](_0x14448b(0xd2))[_0x14448b(0x74)] = _0x14448b(0x78);
+  var _0x19ad16 = _0x2ee787;
+  alertstr = 0x0;
+  if (currentq < totalq) {
+    currentq = currentq + 0x1,
+      document[_0x19ad16(0x96)](_0x19ad16(0x7f))[_0x19ad16(0x83)] = '',
+      document[_0x19ad16(0x96)]('qnumber')['innerHTML'] = _0x19ad16(0xa5) + currentq + _0x19ad16(0xa1) + totalq,
+      document[_0x19ad16(0x96)]('question')['innerHTML'] = questionset[currentq - 0x1][_0x19ad16(0x99)];
+    for (let _0x198923 = 0x0; _0x198923 < Object[_0x19ad16(0xa7)](questionset[currentq - 0x1][_0x19ad16(0x95)])[_0x19ad16(0x93)]; _0x198923++) {
+      j = _0x198923 + 0x1,
+        thischoice = document[_0x19ad16(0xb0)](_0x19ad16(0xab) + j + ')'),
+        thischoice['innerHTML'] = questionset[currentq - 0x1]['answerChoiceList'][_0x198923][_0x19ad16(0x9c)],
+        $(_0x19ad16(0xab) + j + ')')[_0x19ad16(0xa0)]();
+    }
+  } else
+    document[_0x19ad16(0x96)]('extra')[_0x19ad16(0x83)] = '', document[_0x19ad16(0x96)](_0x19ad16(0xa4))[_0x19ad16(0x83)] = 'Congratulations!\x20You\x20have\x20completed\x20the\x20quiz<br><br>You\x20got\x20' + correctanswers + _0x19ad16(0xa6) + totalq + _0x19ad16(0xaa), document[_0x19ad16(0x96)](_0x19ad16(0x99))[_0x19ad16(0x83)] = _0x19ad16(0xa8);
 }
 function restart() {
-    var _0x3160f0 = _0x1a875c;
-    correctanswers = 0x0,
-    totalq = Object[_0x3160f0(0xb2)](questionset)['length'],
+  var _0x5910f6 = _0x2ee787;
+  correctanswers = 0x0,
+    totalq = Object[_0x5910f6(0xa7)](questionset)[_0x5910f6(0x93)],
     currentq = 0x1,
-    document[_0x3160f0(0x99)](_0x3160f0(0x93))[_0x3160f0(0x74)] = _0x3160f0(0xa7) + currentq + _0x3160f0(0x126) + totalq,
-    document[_0x3160f0(0x99)]('question')[_0x3160f0(0x74)] = questionset[currentq - 0x1]['question'];
-    for (let _0x1ea5c7 = 0x0; _0x1ea5c7 < Object['keys'](questionset[currentq - 0x1][_0x3160f0(0x91)])[_0x3160f0(0x95)]; _0x1ea5c7++) {
-        j = _0x1ea5c7 + 0x1,
-        thischoice = document[_0x3160f0(0x103)]('#choices>li:nth-child(' + j + ')'),
-        thischoice[_0x3160f0(0x74)] = questionset[currentq - 0x1][_0x3160f0(0x91)][_0x1ea5c7][_0x3160f0(0xc9)],
-        $(_0x3160f0(0xe9) + j + ')')[_0x3160f0(0xd0)]();
-    }
+    document[_0x5910f6(0x96)](_0x5910f6(0xa4))[_0x5910f6(0x83)] = _0x5910f6(0xa5) + currentq + _0x5910f6(0xa1) + totalq,
+    document[_0x5910f6(0x96)]('question')['innerHTML'] = questionset[currentq - 0x1][_0x5910f6(0x99)];
+  for (let _0x1f7886 = 0x0; _0x1f7886 < Object[_0x5910f6(0xa7)](questionset[currentq - 0x1]['answerChoiceList'])[_0x5910f6(0x93)]; _0x1f7886++) {
+    j = _0x1f7886 + 0x1,
+      thischoice = document[_0x5910f6(0xb0)](_0x5910f6(0xab) + j + ')'),
+      thischoice[_0x5910f6(0x83)] = questionset[currentq - 0x1]['answerChoiceList'][_0x1f7886][_0x5910f6(0x9c)],
+      $(_0x5910f6(0xab) + j + ')')['show']();
+  }
+}
+function _0x48de() {
+  var _0x41dd18 = ['.disabled', 'querySelector', '1176426ZWEwvj', '<hr><b>References</b><br><br>', '5301065HIdLMj', 'answer', 'Incorrect,\x20try\x20again!<br>', '#5fb665', 'extra', 'color', '2127dRGPbg', '<hr>', 'innerHTML', '1556670oQJJPa', 'prepend', '#choices>li:nth-child(n)', 'https://famp-it.org/earlyfood/leap-guidelines/', '6049592QGvyaT', '$1-$2', 'atob', 'click', '3256YULrVY', 'slice', '#00000085', 'background', 'hide', 'append', 'log', 'length', 'added', 'answerChoiceList', 'getElementById', '#extra', 'index', 'question', '.submit', 'replace', 'choice', '110095HqMZVQ', 'removeClass', '5349825SIMnzr', 'show', '\x20of\x20', 'References', 'disabled', 'qnumber', 'Question\x20', '\x20out\x20of\x20', 'keys', '<a\x20href=\x22javascript:restart()\x22>Restart\x20quiz</a>', '2LrEIKe', '\x20questions\x20correct.', '#choices>li:nth-child(', 'Q3JlYXRlZCBieSBEciBBcmp1biBTaW5naCwgYXJqdW4yNzk2QGdtYWlsLmNvbQ==', '.*?/(.*?)/', 'css'];
+  _0x48de = function () {
+    return _0x41dd18;
+  };
+  return _0x48de();
 }
 function loganswers() {
-    var _0x44ed82 = _0x1a875c;
-    $(_0x44ed82(0xc0))['length'] == 0x0 && correctanswers++;
+  var _0x2b1b28 = _0x2ee787;
+  $(_0x2b1b28(0xaf))['length'] == 0x0 && correctanswers++;
 }
